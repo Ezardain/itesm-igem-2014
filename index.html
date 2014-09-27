@@ -19,92 +19,26 @@
   <link href="css/ITESM14_main.css" type="text/css" rel="stylesheet">
   <link href="css/ITESM14_navbar.css" type="text/css" rel="stylesheet">
 
+  <!--Google Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+  <script> 
+    $(function(){
+      $("#wiki-header").load("header.html"); 
+    });
+  </script> 
+  <script> 
+    $(function(){
+      $("#wiki-footer").load("footer.html"); 
+    });
+  </script> 
 </head>
 
 <div id="wiki-body">
 
 <body>
 
-  <header class="initial-nav-scroll-up">
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-
-      <div class="mypic navbar-fixed-top img-responsive hidden-sm hidden-xs" style="padding-left: 0px">
-          <img src="http://2014.igem.org/wiki/images/f/f2/ITESM14_corner.png"></img>
-      </div>
-
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <a id="igem_brand" class="brand" href="#"><img src="assets/images/igem-logo-small.png"></a>
-        <div id="navbar-control" class="collapse navbar-collapse pull-right">
-          <ul class="nav navbar-nav" style="font-family: 'Yanone Kaffeesatz';">
-            <li id="home"><a href="index.html">Home</a></li>
-            <li id="project" class="dropdown">
-              <a href="project.html" class="dropdown-toggle disabled" data-toggle="dropdown">Project</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Notebook</a></li>
-                <li><a href="#">Protcols</a></li>
-                <li><a href="#">Mathematical models</a></li>
-                <li><a href="module1.html">Module I</a></li>
-                <li><a href="module2.html">Module II</a></li>
-                <li><a href="#">Module III</a></li>
-                <li><a href="module4.html">Module IV</a></li>
-              </ul>
-            </li>
-            <li id="achievements" class="dropdown">
-              <a href="achievements.html" class="dropdown-toggle disabled" data-toggle="dropdown">Achievements</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Results</a></li>
-                <li><a href="#">Biobricks</a></li>
-              </ul>
-            </li>                
-            <li id="safety" class="dropdown">
-              <a href="safety.html" class="dropdown-toggle disabled" data-toggle="dropdown">Safety</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Safety protocols</a></li>
-                <li><a href="#">Safety of the project</a></li>
-              </ul>
-            </li>
-            <li id="human-practice" class="dropdown">
-              <a href="human-practice.html" class="dropdown-toggle disabled" data-toggle="dropdown">Human Practice</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Kids and Health</a></li>
-                <li><a href="#">Cancer in México</a></li>
-                <li><a href="#">Clases for children</a></li>
-              </ul>
-            </li>                
-            <li id="collaboration" class="dropdown">
-              <a href="collaboration.html" class="dropdown-toggle disabled" data-toggle="dropdown">Collaboration</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Kids and Health</a></li>
-                <li><a href="#">Cancer in México</a></li>
-                <li><a href="#">Clases for Children</a></li>
-              </ul>
-            </li>                
-            <li id="igem-logo"><a href="team.html">Team</a></li>
-            <li><a href="http://2014.igem.org/Main_Page"><img src="assets/images/ITESM14_iGem_logo_navbar.png" height="34px" style="margin: -7px" ></a></li>
-            <li id="social-media">
-              <a href="https://www.facebook.com/IgemTecMonterrey" style="padding: 4px">
-                <i class="fa fa-facebook" style="font-size: 17px"></i>
-                 <div class="fb-like-box" data-href="https://www.facebook.com/FacebookDevelopers" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="true"></div>
-              </a>  
-              <a href="https://twitter.com/iGEMTecMty" style="padding: 4px">
-                <i class="fa fa-twitter" style="font-size: 17px"></i>
-              </a>
-            </li>  
-            <li><a id="show-menu" class="glyphicon glyphicon-collapse-down" href="#" style="font-size: 16px;"></a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-
+  <header id="wiki-header" class="initial-nav-scroll-up">
   </header>
 
 <div id ="wiki-content" class="main-content">
@@ -142,80 +76,15 @@
 
 </body>
 
-<footer>
+<footer id="wiki-footer" >
+</footer>
 
-    <div class="container-fluid" id="wiki-footer" >
-      
-      <div class="col-md-3">
-          <img src="assets/images/footer-logo-01.svg" class="img-responsive"></img>
-      </div>
-
-      <div class="col-md-3">
-        <div class="address">
-          <h1>Address:</h1>
-          <address style="color: white;">
-            <strong>Centro de Biotecnología FEMSA</strong><br>
-            Av. Eugenio Garza Sada 2501 Sur<br> 
-            Col. Tecnológico, Zip Code: 64849<br>
-            Monterrey, Nuevo León, México<br>
-            Phone number: +52 (81) 8358-2000<br>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="sponsors">
-          <div class="col-md-6">
-            <img src="assets/images/nuevo_leon.png" class="img-responsive"></img>
-          </div>
-          <div class="col-md-6">
-              <img src="assests/images/logoi4.png" class="img-responsive"></img>
-              <img src="assets/images/primario-calado.png" class="img-responsive"></img>
-          </div>
-        </div>
-      </div>  
-
-    </div>
- 
-  </footer>
-
-<script type="text/javascript">
-$(document).on("scroll",function(){
-    if($(document).scrollTop()>500){
-        $("header").removeClass("initial-nav-scroll-up").addClass("nav-scroll-down");
-        $(".mypic").hide();
-        $("#social-media").hide();
-        $("#show-menu").hide();
-        $("#igem-brand").show();
-    } else{
-        $("header").removeClass("nav-scroll-down").addClass("initial-nav-scroll-up");
-        $("#navbar-control").addClass("pull-right");
-        $(".mypic").show();
-        $("#social-media").show();
-        $("#show-menu").show();
-        $("#igem-brand").hide();
-    }
-});
-</script>
+<script src="js/ITESM14_main.js"></script>
 
 <script>
-  $('#show-menu').on('click', function(e) {
-    e.preventDefault();
-    if($('.left-menu').is(":visible")) {
-       $('.left-menu').hide();
-       $('.right-menu').hide();
-       $( "#show-menu" ).removeClass("glyphicon-collapse-up");
-       $( "#show-menu" ).addClass("glyphicon-collapse-down");
-     }else{
-       $('.left-menu').show();
-       $('.right-menu').show();
-       $( "#show-menu" ).removeClass("glyphicon-collapse-down");
-       $( "#show-menu" ).addClass("glyphicon-collapse-up");
-     }
+  $( document ).ready(function() {
+     $( "#home" ).addClass("active");
   });
-</script>
-
-<script>
-  $( "#home" ).addClass("active");
 </script>
 
 </div>
