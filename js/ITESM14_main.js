@@ -29,3 +29,7 @@ $('#show-menu').on('click', function(e) {
        $( "#show-menu" ).addClass("glyphicon-collapse-up");
      }
 });
+
+$(function () {
+  $('#myTab a:first').tab('show')
+})
