@@ -1,0 +1,241 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Project</title>
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+
+  <!-- Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+
+  <!--CSS Reset -->
+  <!--<link href="http://2014.igem.org/Team:Tec-Monterrey/ITESM14_reset.css?action=raw&ctype=text/css" type="text/css" rel="stylesheet"> -->
+
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css?action=raw&ctype=text/css" type="text/css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!--Custom CSS -->
+  <link href="css/ITESM14_main.css" type="text/css" rel="stylesheet">
+  <link href="css/ITESM14_navbar.css" type="text/css" rel="stylesheet">
+  <link href="css/lightbox.css" rel="stylesheet" />
+  <link href="css/ITESM14_tab.css" type="text/css" rel="stylesheet">
+
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+  <script> 
+    $(function(){
+      $("#wiki-header").load("header.html"); 
+    });
+  </script> 
+  <script> 
+    $(function(){
+      $("#wiki-footer").load("footer.html"); 
+    });
+  </script>
+</head>
+
+<div id="wiki-body">
+
+<body>
+
+  <header id="wiki-header" class="initial-nav-scroll-up">
+  </header>
+
+<div id ="wiki-content" class="main-content">
+
+  <div class="jumbotron" style="background-color:transparent; padding-top: 0; margin-bottom: 0; padding-bottom: 0; padding-left:0;">
+    <div class="container">
+      <h1 class="text-center" style="color: #f4ff3b; font-size: 7vw; font-weight: lighter; padding-top:30px;">Module 1: Attenuation</h1>
+      <img class="col-md-6 col-md-offset-3" src="images/module1/module1header.svg">
+      
+    </div>
+  </div>
+
+  <div class="well">
+  <div class="container">
+    <!--===============================Tab navigation======================================-->
+    <ul class="nav nav-tabs nav-justified" role="tablist" id="myTab" style="font-family: 'Yanone Kaffeesatz';">
+      <li class="active"><a href="#overview" role="tab" data-toggle="tab">Overview</a></li>
+      <li><a href="#notebook" role="tab" data-toggle="tab">Notebook</a></li>
+      <li><a href="#protocols" role="tab" data-toggle="tab">Protocols</a></li>
+      <li><a href="#modeling" role="tab" data-toggle="tab">Modeling</a></li>
+      <li><a href="#module1" role="tab" data-toggle="tab">Module I</a></li>
+      <li><a href="#module2" role="tab" data-toggle="tab">Module II</a></li>
+      <li><a href="#module3" role="tab" data-toggle="tab">Module III</a></li>
+      <li><a href="#module4" role="tab" data-toggle="tab">Module IV</a></li>  
+    </ul>
+
+    <!--===============================Tab content==================================================-->
+    <div class="tab-content">
+      <div class="tab-pane active" id="overview">Overview</div>
+      <div class="tab-pane" id="notebook">Notebook</div>
+      <div class="tab-pane" id="protocols">Protocols</div>
+      <div class="tab-pane" id="modeling">Modeling</div>
+      <div class="tab-pane" id="module1">
+        <h1>Aim</h1>
+        <section id="column">
+          <p>
+           The project this year is a continuation of last year’s project (2013.igem.org/Tec-Monterrey) in which the team developed a modified <em>Escherichia coli</em> that was able to deliver a pro-apoptotic protein (Apoptin) to kill cancer cells. The aim of this module was to address one of the most relevant issues of our past project, which is the immune response that the introduction of bacteria to the blood. Thus, we attempted to remove a significant amount of endotoxins found on the membrane of <em>E. coli</em> in order to prevent and/or reduce the impact of the possible immunological response caused by the bacterial therapy.  </b>
+          </p>
+        </section>
+        <hr>
+
+        <h1>Background</h1>
+        <h2> <em>Escherichia coli</em> and cancer</h2>
+          <section id="column">
+            <p>
+            Last year our team developing a bacterial therapy, based on the fact that <em>E. coli</em> it’s able to colonize hypoxic environments, such as tumors. Nevertheless, the risk of causing a septic shock remained as a significant issue. Thus, in this project we aimed to find a solution for this problem.
+            </p>
+          </section>
+          
+        <h2> Endotoxins</h2>
+          <section id="column">
+            <p>
+            Endotoxins are outer membrane components native to gram negative bacteria, specifically, for project matters,<em>Escherichia coli</em>. Endotoxins are a primary concern in project design due to adverse reactions that these can trigger from the human system, in particular, septic shock [1].  
+            </p>
+            <p>
+            Lipopolysaccharide (LPS) are composed of a membrane side in lipid, (Lipid A) and an outer polysaccharide (0-Antigen), these are joined by a core polysaccharide region [6]. LPS rests in the outer bacterial cell membrane and is known to cause most of the endotoxin-related inflammations in humans. 
+            </p>
+            <p>
+            Murein lipoprotein (Braun’s lipoprotein) endotoxin consists of peptidoglycan and a lipid subsection, bound together by lysine. It serves a structural purpose within the cell, holding the rigid membrane together due to its strongly interacting bonds [1]. Furthermore, it induces a LPS-like reaction, due to toll-like receptor 2 recognition of Braun’s Lipoprotein [5]. Additionally, it works in synergy with LPS in septic shock rising events [10].     
+            </p>
+            <p>
+            The immune system is able to detect Endotoxins through specific toll-like receptors [5]. LPS interacts with TLR4 and its coreceptor, myeloid differentiation protein 2. Braun’s lipoprotein binds with TLR2. Both Lpp and LPS induce toxic and biological responses within hosts through the receptor binding and consequent induction of innate immune system production of cytokines such as tumor necrosis factor alpha, gamma interferon, interleukin-1-beta, and IL-6 [9], these of which are prone to trigger inflammation when produced in great amounts.
+            </p>
+          </section>
+        <h2>Membrane engineering</h2>
+          <section id="column">
+            <p>
+            Engineering <em>E. coli’s</em> membrane to remove LPS and Braun’s lipoprotein reduces the chance of toll-like receptors 4 and 2 to react abruptly. Decreasing the concentration of these endotoxins, which are by themselves inflammation inducing substrates, will subsequently reduce the triggering of their corresponding toll-like receptor and thus, inflammation. This will reduce further impairment due to auto-immune complications in the individual receiving bacterial therapy. [2]. 
+            </p>
+            <p>
+            For the endotoxin removal, both genes, msbb and lpp will be deleted from E.coli’s genome. These genes are, naturally, the most relevant to the production of inflammation factors msbB for the impairment of meristic acid transporter formation crucial in LPS toxicity and lpp Braun’s Lipoprotein. The phage lambda-derived Red recombination system was chosen for the engineering of E. coli’s genome due to its highly specific sequence targeting and simplicity.
+            </p>
+            <p>
+            Two constructs were designed for this gene knockout, red lambda system requires a genetic construct. These contain a antibiotic resistance genes, AmpR and Nptll, and the LuxR or LuxI sequences flanked by 50 bp that are homologous to the genes msBb and Lps to be deleted. For a detailed procedure of the experimental protocol of the red lambda system works <a href="http://cdn.b-bridge.com/products/K003_Protocol.pdf"> click here</a>. 
+            </p>
+          </section>
+        <hr>
+      
+        <h1>Design/Biobricks</h1>
+          <p>
+          Two were designed constructs to delete  C1 and C2 for the insertion/deletion of the lpp and msbB genes, respectively.
+          </p>
+          
+        <h2><strong> C1 </strong></h2>
+        <section id="column">
+          <p>
+          This construct contains the sequence homologies of 50 bp to delete the <em>lpp</em> gene (Braun’s lipoprotein) with an ampicillin resistance and the sequences for the LuxR synthesis (when this protein is coupled with the AHL, it activates the transcription of genes controlled by the lux box). The FRT sequences included are used to remove the antibiotic resistance with a specific recombinase.
+          </p>
+          <p>
+          Its general structure is as follows:
+          </p>
+          <p>
+          lpp // FRT // Amp Promoter // RBS // AmpR // Terminator // FRT // Promoter J23100// RBS// LuxR // Terminator // lpp
+          </p>
+        
+        <figure>
+          <a href="images/module1/biobrickC1.png" data-lightbox="biobrickC1" data-title="Fig. 1 Biobrick C1"><img class="img img-responsive" style="margin:0px auto;display:block width:20%;" src="images/module1/biobrickC1.png"></a>
+          <center><figcaption> Fig. 1 Biobrick C1 </Figcaption></center>
+        </figure>
+        
+        </section>
+        <!--<p>
+        <img style="margin:0px auto;display:block" src="Images/Module I/biobrickC1.jpg">
+        </p>-->
+        
+        <h2><strong> C2 </strong></h2>
+        <section id="column">
+          <p>
+          It contains the sequence homologies to delete the msbB gen (LPS meristic acid moiety carrier) with a kanamycin resistance and the sequences for the Lux I production (AHL synthase).
+          </p>
+          <p>
+          Its general structure is as follows:
+          </p>
+          <p>
+          msBb // FRT // Kan Promoter// RBS // KanR // Terminator // FRT // Cat Promoter // RBS// LuxI // Terminator // msBb
+          </p>
+          
+          <figure>
+            <a href="images/module1/biobrickC2.png" data-lightbox="biobrickC2" data-title="Fig. 2 Biobrick C2"><img class="img img-responsive"style="margin:0px auto;display:block " src="images/module1/biobrickC2.png"></a>
+          <center><figcaption> Fig. 2 Biobrick C2 </Figcaption></center>
+          </figure>
+          
+        </section>
+        <hr>
+        
+        <h1>Results</h1>
+          <p>
+          *
+            </p>
+        <hr>
+        
+        <h1>References</h1>
+          <section id="column">
+            <ol>
+            <li><p>
+            Braun, V., & Rehn, K. (1969). Chemical characterization, spatial distribution and function of a lipoprotein (murein-lipoprotein) of the E. coli cell wall.<em> European Journal of Biochemistry, 10(3)</em>, 426-438.
+            </p></li>
+            <li><p>
+            Fadl, A. A., Sha, J., Klimpel, G. R., Olano, J. P., Niesel, D. W., & Chopra, A. K. (2005). Murein lipoprotein is a critical outer membrane component involved in Salmonella enterica serovar Typhimurium systemic infection.<em> Infection and immunity, 73(2)</em>, 1081-1096.   
+            </p></li>
+            <li><p>
+            Morrison, D. C., & Ulevitch, R. J. (1978). The effects of bacterial endotoxins on host mediation systems. A review.<em>The American journal of pathology, 93(2)</em> , 526.
+            </p></li>
+            <li><p>
+            Mosberg, J. A., Lajoie, M. J., & Church, G. M. (2010). Lambda red recombineering in Escherichia coli occurs through a fully single-stranded intermediate.<em>Genetics, 186(3)</em>, 791-799. 
+            </p></li>
+            <li><p>
+            Neilsen, P. O., Zimmerman, G. A., & McIntyre, T. M. (2001). Escherichia coli Braun lipoprotein induces a lipopolysaccharide-like endotoxic response from primary human endothelial cells.<em>The Journal of Immunology, 167(9),</em>5231-5239. 
+            </p></li>
+            <li><p>
+            Rietschel, E. T., Kirikae, T., Schade, F. U., Mamat, U., Schmidt, G., Loppnow, H., ... & Di Padova, F. (1994). Bacterial endotoxin: molecular relationships of structure to activity and function.<em>The FASEB Journal, 8(2)</em>, 217-225.
+            </p></li>
+            <li><p>
+            Sha, J., Fadl, A. A., Klimpel, G. R., Niesel, D. W., Popov, V. L., & Chopra, A. K. (2004). The two murein lipoproteins of Salmonella enterica serovar Typhimurium contribute to the virulence of the organism.<em> Infection and immunity, 72(7)</em>, 3987-4003. 
+            </p></li>
+            <li><p>
+            Stritzker, J., Hill, P. J., Gentsche, I., & Szalay, A. A. (2010). Myristoylation negative msbB-mutants of probiotic E. coli Nissle 1917 retain tumor specific colonization properties but show less side effects in immunocompetent mice.<em>Bioengineered, 1(2)</em>, 139-145. 
+            </p></li>
+            <li><p>
+            Ulevitch, R. J., & Tobias, P. S. (1995). Receptor-dependent mechanisms of cell stimulation by bacterial endotoxin.<em> Annual review of immunology, 13(1)</em>, 437-457.  
+            </p></li>
+            <li><p>
+            Zhang, H., Peterson, J. W., Niesel, D. W., & Klimpel, G. R. (1997). Bacterial lipoprotein and lipopolysaccharide act synergistically to induce lethal shock and proinflammatory cytokine production. <em> The Journal of Immunology, 159(10)</em>, 4868-4878. 
+            </p></li>
+            </ol>
+          </section>
+        <hr>
+      </div><!--end module1-->
+
+      <div class="tab-pane" id="module2">Module2</div>
+      <div class="tab-pane" id="module3">Module3</div>
+      <div class="tab-pane" id="module4">Module4</div>
+    </div> <!-- tab-content -->
+
+  </div><!-- container -->
+  </div><!-- well -->
+
+
+</body>
+
+<footer id="wiki-footer" >
+</footer>
+
+<script src="js/ITESM14_main.js"></script>
+
+<script>
+  $( "#project" ).addClass("active");
+</script>
+
+</div>
+
+</html>
+
