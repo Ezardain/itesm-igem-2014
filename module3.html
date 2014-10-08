@@ -1,0 +1,167 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Module 3</title>
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+
+  <!-- Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+
+  <!--CSS Reset -->
+  <!--<link href="http://2014.igem.org/Team:Tec-Monterrey/ITESM14_reset.css?action=raw&ctype=text/css" type="text/css" rel="stylesheet"> -->
+
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css?action=raw&ctype=text/css" type="text/css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!--Custom CSS -->
+  <link href="css/ITESM14_main.css" type="text/css" rel="stylesheet">
+  <link href="css/ITESM14_navbar.css" type="text/css" rel="stylesheet">
+  <link href="css/lightbox.css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+  <script> 
+    $(function(){
+      $("#wiki-header").load("header.html"); 
+    });
+  </script> 
+  <script> 
+    $(function(){
+      $("#wiki-footer").load("footer.html"); 
+    });
+  </script>
+</head>
+
+<div id="wiki-body">
+
+<body>
+
+  <header id="wiki-header" class="initial-nav-scroll-up">
+  </header>
+
+<div id ="wiki-content" class="main-content">
+
+  <div class="jumbotron col-md-offset-3" style="background: transparent; padding-top: 0; margin-bottom: 0; padding-bottom: 0; padding-left:0;">
+    <div class="container">
+		<h1 style="color: #f4ff3b; font-size: 500%; padding: 0; margin: 50; font-weight: lighter;">Module 3: **** </h1>    
+	</div>
+  </div>
+
+  <div class="well">
+  <div class="container">
+
+    <h1>Aim</h1>
+      <section id="column"><p> 
+	  The objective of this module was to regulate the expression of bacteriophages in a living system, which would be achieved through the use of the quorum sensing system from <em>Vibrio fisheri</em>. The production of the phage is regulated using the <em>pLux</em> promoter and the insertions of LuxI and LuxR in the E. coli genome from <a href="module1.html">Module I</a>.
+      </p></section>
+    <hr>
+
+    <h1>Background</h1>
+	<section id="column">
+		<p>
+		Quorum sensing is a cell-density dependent gene regulation system. This sensing mechanism is based on the production, secretion and detection of small signaling molecules called autoinducers. The concentration of the autoinducers correlates to the abundance of the microorganisms in the vicinity. When this concentration reaches a threshold, the microorganisms undertake a coordinated change in their gene-expression profiles [1].
+		</p>
+		<p>
+		The first quorum sensing system to be described was that of the bioluminescent marine bacterium Vibrio fischeri, and it is considered a model organism of quorum sensing in gram-negative bacteria. These bacteria colonize the light organ of the Hawaiian squid Euprymna scolopes; when the colonies reach a sufficiently high cell density, the expression of the bioluminescent genes in the luciferase operon (luxICDABE) is activated [2].
+		</p>
+		<p>
+		There are two proteins that control the expression of the luciferase operon, Lux I and Lux R. The former is an autoinducer synthase, which produces the diffusible signal N-(3-oxohexanoyl)-L-homoserine-lactone (3-oxo-C6-HSL), an acyl-homoserine lactone (AHL). On the other hand, LuxR is the cytoplasmic autoinducer receptor and DNA binding transcriptional activator. Both are necessary for the correct expression of the bioluminescent genes [4].
+		</p>
+		<p>
+		The system operates in the following way:
+			<li><p>
+			First, the bacteria begin to grow while producing the autoinducer (3-oxo-C6-HSL).
+			</p></li>
+			<li><p>
+			Then, when the autoinducer reaches a critical threshold concentration, the complex LuxR-AHL is formed. 
+			</p></li>
+			<li><p>
+			The LuxR-AHL complex activates transcription of the luciferase operon by binding to the lux box, a 20bp inverted repeated sequence located in the luxI promoter region.
+			</p></li>
+		</p>
+		<figure>
+			<a href="images/dog.jpg" data-lightbox="biobrickC1" data-title="Fig. 3.1: Illustration of the quorum sensing system of V. fischeri [2]"><img class="img img-responsive" style="margin:0px auto;display:block width:20%;" src="images/dog.jpg"></a>
+			<center><figcaption> Fig. 3.1: Illustration of the quorum sensing system of <em>V. fischeri</em> [2].</Figcaption></center>
+		</figure>
+	</section>
+	<h1> Application in this project </h1>
+	<section id="column">
+		<p>
+		The goal of this module is to control the expression of bacteriophages using <em>V.fischeri’s</em> quorum sensing system.  To do this, we will use three parts: <em>luxI</em>, <em>luxR</em> and the <em>pLux</em>.
+		</p>
+		<p>
+		First, a chromosomal integration of the two genes of interest (<em>luxI</em> and <em>luxR</em>) is required. This integration will take place in two different loci (<em>lpp</em> and <em>msbB</em>). The idea is to insert these genes and simultaneously knock out two genes of the bacterial membrane (for more information see <a href="module1.html">Module I</a>). This way, the genes will be expressing the autoinducer synthase and the LuxR protein at all times.
+		</p>
+		<p>
+		The second part of the strategy is the direct mutagenesis of the phage M13 at the promoter of the PII protein. The PCR mutagenesis will add the pLux as a promoter of PII protein. This protein is responsible for the replication of the single strand by nicking the double stranded form of the genome. For more information, refer to <a href="module2.html">Module II</a>.
+		</p>
+	</section>
+	<h1>Past iGEM projects </h1>
+	<section id="column">
+		<p>
+		In 2013 the Tokyo Tech iGEM team created a recombinant <em>E.coli</em> they called  <em>E. ninja</em>. This bacteria is capable of throwing “ninja stars”, namely bacteriophages, in response to acyl-homoserine lactone (3-oxo-C6-HSL). Thus, they created an inducible release system of M13 phages. Their approach consisted on changing the promoter of PII protein for an inducible promoter; in this case, the pLux. The same principle for the expression of our bacteriophage is used in our design.		
+		<br></br>
+		For more information on their project refer to:<a href="http://2013.igem.org/Team:Tokyo_Tech"> http://2013.igem.org/Team:Tokyo_Tech</a>
+		</p>
+		<figure>
+			<img class="img img-responsive" style="margin:0px auto;display:block width:20%;" src="images/module3/TokyoTech.png">
+			<center><figcaption> Fig. 3.2: Tokyo Tech 2013 Project</Figcaption></center>
+		</figure>
+		
+	</section>
+	<hr>
+	<h1> Biobricks </h1>
+		<p>
+		There are two biobricks that are the responsible of the correct function of the system, which are C1 and C2 and are described in <a href="module1.html">Module I</a>.
+		</p>
+	<hr>
+	<h1>Results</h1>
+	  <p>
+	  *
+      </p>
+	<hr>
+	
+	<h1>References</h1>
+	  <section id="column">
+	  <ol>
+		<li><p>
+		Choudhary, S., & Schmidt-Dannert, C. (2010). Applications of quorum sensing in biotechnology. <em>Appl Microbial Biotechnol, 86</em>, 1267-1279.
+		</p></li>
+		<li><p>
+		Egland, K., & Greenberg, E. (1999). Quorum sensing in Vibrio fischeri : elements of the luxI promoter. <em>Molecular Microbiology, 31</em>(4), 1197-1204.
+		</p></li>
+		<li><p>
+		Rakonjac, J., Bennet, N., Spagnuolo, J., Gagic, D., & Russel, M. (2011). Filamentous Bacteriophage: Biology, Phage Display and Nanotechnology Applications. <em>Curr. Issues Mol. Biol, 13</em>, 51-76.
+		</p></li>
+		<li><p>
+		Waters, C., & Bassler, B. (2005). Quorum Sensing: Cell-to-Cell Communication in Bacteria. <em>The Annual Review of the Cell and Developmental Biology, 21</em>, 319-346.
+		</p></li>
+	  </ol>
+	  </section>
+	<hr>
+	
+  </div> 
+  </div>
+</div>
+
+</body>
+
+<footer id="wiki-footer" >
+</footer>
+
+<script src="js/ITESM14_main.js"></script>
+
+<script>
+  $( "#project" ).addClass("active");
+</script>
+
+</div>
+
+</html>
+
