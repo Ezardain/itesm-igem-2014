@@ -66,10 +66,10 @@ h1.firstHeading {
 #wiki-body p {
     font-size: 20px;
     font-weight: lighter;
-	text-align:justify; /*Ana*/
+	text-align:justify; 
 }
 
-/*Esto es mío (Ana)*/
+
 #column{
 	-webkit-column-count:2;/*Chrome & Safari*/
 	-moz-column-count:2;/*Firefox*/
@@ -79,10 +79,6 @@ h1.firstHeading {
 	column-gap: 3em;
 }
 
-#blue{
-	color: #0B0BF3
-	}
-
 #primers{
 	list-style-type: none;
 	font-size: 13.5px;
@@ -90,7 +86,29 @@ h1.firstHeading {
 	padding-left: 0px;
 }
 
-/*Termina lo mío*/
+table, td {
+   border-collapse:collapse;
+   padding-bottom: 1px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+th {
+   padding: 3px;
+   background: #451d8e;
+   color:#f4ff3b;
+}
+#ttitle{
+	text-align:center;
+	font-size:40px;
+}
+#tsubtitle{
+	border-bottom: 1px dotted black;
+}
+#tsubtitle2{
+	border-top: 1px dotted black;
+	border-bottom: 1px dotted black;
+}
 .mypic {
     z-index: 2000;
 }
