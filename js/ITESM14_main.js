@@ -1,5 +1,5 @@
 $(document).on("scroll",function(){
-    if($(document).scrollTop()>500){
+    if($(document).scrollTop()>450){
         $("header").removeClass("initial-nav-scroll-up").addClass("nav-scroll-down");
         $(".mypic").fadeOut(700);
         $("#social-media").fadeOut(600);

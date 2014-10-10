@@ -4,11 +4,36 @@
     background: url(http://2014.igem.org/wiki/images/4/44/ITESM14_background.png);
 }
 
+/*Accordion*/
+.panel .panel-heading{
+  background-color: #ffffff;
+  color: #ff0070;
+}
+.panel-title{
+  font-size: 1.3vw;
+}
+.panel-body {
+  font-size: 1.2vw;
+}
+a:hover{
+ text-decoration: none;
+}
+/* end accordion */
+
 body {
-    font-family: 'Yanone Kaffeesatz';
-    background: url(http://2014.igem.org/wiki/images/4/44/ITESM14_background.png);
+  font-family: 'Yanone Kaffeesatz';
+  background: url(http://2014.igem.org/wiki/images/4/44/ITESM14_background.png);
 }
 
+/*Change selection color*/
+p::selection, h1::selection, em::selection, strong::selection, figcaption::selection, a::selection{
+    background:#ff0070;
+    color:#ffffff;
+}
+p::-moz-selection, h1::-moz-selection, em::-moz-selection, strong::-moz-selection, figcaption::-moz-selection, a::-moz-selection{
+    background:#ff0070;
+    color:#ffffff;
+}
 
 /* Remove logo and search */
 div#p-logo, div#search-controls {
