@@ -113,7 +113,8 @@ h1.firstHeading {
 
 table, td {
    border-collapse:collapse;
-   padding-bottom: 1px;
+   padding-bottom: 3.5px;
+   padding-top: 3.5px;
    padding-left: 10px;
    padding-right: 10px;
 }
