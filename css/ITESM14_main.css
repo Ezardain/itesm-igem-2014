@@ -4,13 +4,17 @@
     background: url(http://2014.igem.org/wiki/images/4/44/ITESM14_background.png);
 }
 
+a {
+   color:#46008b
+}
+
 /*Accordion*/
 .panel .panel-heading{
   background-color: #ff0070;
   color: #ffffff;
 }
 .panel-title{
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: 400;
 }
 .panel-body {
@@ -27,11 +31,11 @@ body {
 }
 
 /*Change selection color*/
-p::selection, h1::selection, em::selection, strong::selection, figcaption::selection, a::selection, tr::selection, td::selection, li::selection, th::selection, u::selection, sub::selection{
+p::selection, h1::selection, em::selection, strong::selection, figcaption::selection, a::selection, tr::selection, td::selection, li::selection, th::selection, u::selection, sub::selection, i::selection{
     background:#ff0070;
     color:#ffffff;
 }
-p::-moz-selection, h1::-moz-selection, em::-moz-selection, strong::-moz-selection, figcaption::-moz-selection, a::-moz-selection,tr::-moz-selection, td::-moz-selection, li::-moz-selection, th::-moz-selection, u::-moz-selection, sub::-moz-selection{
+p::-moz-selection, h1::-moz-selection, em::-moz-selection, strong::-moz-selection, figcaption::-moz-selection, a::-moz-selection,tr::-moz-selection, td::-moz-selection, li::-moz-selection, th::-moz-selection, u::-moz-selection, sub::-moz-selection, i::-moz-selection{
     background:#ff0070;
     color:#ffffff;
 }
