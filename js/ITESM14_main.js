@@ -30,19 +30,15 @@ $('#show-menu').on('click', function(e) {
      }
 });
 
-$(function () {
-  $('#myTab a:first').tab('show')
-});
-
 $(document).ready(function(){
-  $("#overviewTab").click(function(){
-    $("#notebookheader").show();
-    $("#module1header").hide();
-    document.title = "Overview";
-  });
-  $("#notebookTab").click(function(){
+  $("a[href='#overview']").click(function(){
     $("#notebookheader").hide();
     $("#module1header").show();
+    document.title = "Overview";
+  });
+  $("a[href='#notebook']").click(function(){
+    $("#notebookheader").show();
+    $("#module1header").hide();
     document.title = "Notebook";
   });
   $("#protocolsTab").click(function(){
@@ -75,4 +71,16 @@ $(document).ready(function(){
     $("#module1header").show();
     document.title = "Module 4";
   });
+});
+
+// Javascript to enable link to tab
+var hash = document.location.hash;
+var prefix = "tab_";
+if (hash) {
+    $('.nav-tabs a[href='+hash.replace(prefix,"")+']').tab('show');
+}
+
+// Change hash for page-reload
+$('.nav-tabs a').on('shown', function (e) {
+    window.location.hash = e.target.hash.replace("#", "#" + prefix);
 });
