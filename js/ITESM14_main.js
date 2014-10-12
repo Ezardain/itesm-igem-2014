@@ -31,44 +31,92 @@ $('#show-menu').on('click', function(e) {
 });
 
 $(document).ready(function(){
-  $("a[href='#overview']").click(function(){
+  $("overviewTab").click(function(){
+    $("#overviewheader").show();
     $("#notebookheader").hide();
-    $("#module1header").show();
+    $("#procolsheader").hide();
+    $("#modelingheader").hide();
+    $("#module1header").hide();
+    $("#module2header").hide();
+    $("#module3header").hide();
+    $("#module4header").hide();
     document.title = "Overview";
   });
-  $("a[href='#notebook']").click(function(){
+  $("#notebookTab").click(function(){
+    $("#overviewheader").hide();
     $("#notebookheader").show();
+    $("#procolsheader").hide();
+    $("#modelingheader").hide();
     $("#module1header").hide();
+    $("#module2header").hide();
+    $("#module3header").hide();
+    $("#module4header").hide();
     document.title = "Notebook";
   });
   $("#protocolsTab").click(function(){
+    $("#overviewheader").hide();
     $("#notebookheader").hide();
-    $("#module1header").show();
+    $("#procolsheader").show();
+    $("#modelingheader").hide();
+    $("#module1header").hide();
+    $("#module2header").hide();
+    $("#module3header").hide();
+    $("#module4header").hide();
     document.title = "Protocols";
   });
   $("#modelingTab").click(function(){
+    $("#overviewheader").hide();
     $("#notebookheader").hide();
-    $("#module1header").show();
+    $("#procolsheader").hide();
+    $("#modelingheader").show();
+    $("#module1header").hide();
+    $("#module2header").hide();
+    $("#module3header").hide();
+    $("#module4header").hide();
     document.title = "Modeling";
   });
   $("#module1Tab").click(function(){
+    $("#overviewheader").hide();
     $("#notebookheader").hide();
+    $("#procolsheader").hide();
+    $("#modelingheader").hide();
     $("#module1header").show();
+    $("#module2header").hide();
+    $("#module3header").hide();
+    $("#module4header").hide();
     document.title = "Module 1";
   });
   $("#module2Tab").click(function(){
+    $("#overviewheader").hide();
     $("#notebookheader").hide();
-    $("#module1header").show();
+    $("#procolsheader").hide();
+    $("#modelingheader").hide();
+    $("#module1header").hide();
+    $("#module2header").show();
+    $("#module3header").hide();
+    $("#module4header").hide();
     document.title = "Module 2";
   });
   $("#module3Tab").click(function(){
+    $("#overviewheader").hide();
     $("#notebookheader").hide();
-    $("#module1header").show();
+    $("#procolsheader").hide();
+    $("#modelingheader").hide();
+    $("#module1header").hide();
+    $("#module2header").hide();
+    $("#module3header").show();
+    $("#module4header").hide();
     document.title = "Module 3";
   });
   $("#module4Tab").click(function(){
+    $("#overviewheader").hide();
     $("#notebookheader").hide();
-    $("#module1header").show();
+    $("#procolsheader").hide();
+    $("#modelingheader").hide();
+    $("#module1header").hide();
+    $("#module2header").hide();
+    $("#module3header").hide();
+    $("#module4header").show();
     document.title = "Module 4";
   });
 });
