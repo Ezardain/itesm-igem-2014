@@ -30,11 +30,12 @@ $('#show-menu').on('click', function(e) {
      }
 });
 
+
 $(document).ready(function(){
-  $("overviewTab").click(function(){
+  $("a[href='#overview']").on('shown.bs.tab', function(){
     $("#overviewheader").show();
     $("#notebookheader").hide();
-    $("#procolsheader").hide();
+    $("#protocolsheader").hide();
     $("#modelingheader").hide();
     $("#module1header").hide();
     $("#module2header").hide();
@@ -42,10 +43,10 @@ $(document).ready(function(){
     $("#module4header").hide();
     document.title = "Overview";
   });
-  $("#notebookTab").click(function(){
+  $("a[href='#notebook']").on('shown.bs.tab', function(){
     $("#overviewheader").hide();
     $("#notebookheader").show();
-    $("#procolsheader").hide();
+    $("#protocolsheader").hide();
     $("#modelingheader").hide();
     $("#module1header").hide();
     $("#module2header").hide();
@@ -53,10 +54,10 @@ $(document).ready(function(){
     $("#module4header").hide();
     document.title = "Notebook";
   });
-  $("#protocolsTab").click(function(){
+  $("a[href='#protocols']").on('shown.bs.tab', function(){
     $("#overviewheader").hide();
     $("#notebookheader").hide();
-    $("#procolsheader").show();
+    $("#protocolsheader").show();
     $("#modelingheader").hide();
     $("#module1header").hide();
     $("#module2header").hide();
@@ -64,10 +65,10 @@ $(document).ready(function(){
     $("#module4header").hide();
     document.title = "Protocols";
   });
-  $("#modelingTab").click(function(){
+  $("a[href='#modeling']").on('shown.bs.tab', function(){
     $("#overviewheader").hide();
     $("#notebookheader").hide();
-    $("#procolsheader").hide();
+    $("#protocolsheader").hide();
     $("#modelingheader").show();
     $("#module1header").hide();
     $("#module2header").hide();
@@ -75,10 +76,10 @@ $(document).ready(function(){
     $("#module4header").hide();
     document.title = "Modeling";
   });
-  $("#module1Tab").click(function(){
+  $("a[href='#module1']").on('shown.bs.tab', function(){
     $("#overviewheader").hide();
     $("#notebookheader").hide();
-    $("#procolsheader").hide();
+    $("#protocolsheader").hide();
     $("#modelingheader").hide();
     $("#module1header").show();
     $("#module2header").hide();
@@ -86,10 +87,10 @@ $(document).ready(function(){
     $("#module4header").hide();
     document.title = "Module 1";
   });
-  $("#module2Tab").click(function(){
+  $("a[href='#module2']").on('shown.bs.tab', function(){
     $("#overviewheader").hide();
     $("#notebookheader").hide();
-    $("#procolsheader").hide();
+    $("#protocolsheader").hide();
     $("#modelingheader").hide();
     $("#module1header").hide();
     $("#module2header").show();
@@ -97,10 +98,10 @@ $(document).ready(function(){
     $("#module4header").hide();
     document.title = "Module 2";
   });
-  $("#module3Tab").click(function(){
+  $("a[href='#module3']").on('shown.bs.tab', function(){
     $("#overviewheader").hide();
     $("#notebookheader").hide();
-    $("#procolsheader").hide();
+    $("#protocolsheader").hide();
     $("#modelingheader").hide();
     $("#module1header").hide();
     $("#module2header").hide();
@@ -108,10 +109,10 @@ $(document).ready(function(){
     $("#module4header").hide();
     document.title = "Module 3";
   });
-  $("#module4Tab").click(function(){
+  $("a[href='#module4']").on('shown.bs.tab', function(){
     $("#overviewheader").hide();
     $("#notebookheader").hide();
-    $("#procolsheader").hide();
+    $("#protocolsheader").hide();
     $("#modelingheader").hide();
     $("#module1header").hide();
     $("#module2header").hide();
