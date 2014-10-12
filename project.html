@@ -27,6 +27,10 @@
 
   <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
+  <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js"></script>
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css" />
+
   <script> 
     $(function(){
       $("#wiki-header").load("header.html"); 
@@ -37,7 +41,37 @@
       $("#wiki-footer").load("footer.html"); 
     });
   </script>
-</head>
+  <script> 
+    $(function(){
+      $("#wiki-module1").load("module1.html"); 
+    });
+  </script>
+  <script> 
+    $(function(){
+      $("#wiki-module2").load("module2.html"); 
+    });
+  </script>
+  <script> 
+    $(function(){
+      $("#wiki-module3").load("module3.html"); 
+    });
+  </script>
+  <script> 
+    $(function(){
+      $("#wiki-module4").load("module4.html"); 
+    });
+  </script>  
+  <script> 
+    $(function(){
+      $("#wiki-notebook").load("notebook.html"); 
+    });
+  </script>
+  <script> 
+    $(function(){
+      $("#wiki-protocols").load("protocols.html"); 
+    });
+  </script>
+  </head>
 
 <div id="wiki-body">
 
@@ -79,7 +113,7 @@
         <img class="col-md-8 col-md-offset-2 " src="images/module1/module1header.svg">
       </div>
       <div id="module4header">
-        <h1 class="text-center" style="color: #f4ff3b; font-size: 7vw; font-weight: lighter; padding-top:30px;">Module 1: Effectors</h1>
+        <h1 class="text-center" style="color: #f4ff3b; font-size: 7vw; font-weight: lighter; padding-top:30px;">Module 4: Effectors</h1>
         <img class="col-md-8 col-md-offset-2 " src="images/module1/module1header.svg">
       </div>
     </div>
@@ -99,7 +133,6 @@
       <li><a id="module3Tab" href="#module3" role="tab" data-toggle="tab">Module III</a></li>
       <li><a id="module4Tab" href="#module4" role="tab" data-toggle="tab">Module IV</a></li>  
     </ul>
-
     <!--===============================Tab content==================================================-->
     <div class="tab-content">
       <div class="tab-pane active" id="overview">
@@ -121,20 +154,27 @@
           Schatzkin, E. (2012, February 21). Cancer: Mexico’s Growing Problem. Retrieved September 14, 2014, from <a href="http://globalhealthsciences.ucsf.edu/news-events/cancer-mexico-s-growing-problem" target="_blank">http://globalhealthsciences.ucsf.edu/news-events/cancer-mexico-s-growing-problem</a> 
           </p></li>
       </div>
-      <div class="tab-pane" id="notebook">Notebook</div>
+      <div class="tab-pane" id="notebook">
+          <div id="wiki-notebook"></div>
+      </div><!--end notebook-->
       <div class="tab-pane" id="protocols">
- 
-      </div><!--end protocols-->
-      
-      <div class="tab-pane" id="modeling">Modeling</div>
+          <div id="wiki-protocols"></div>
+      </div><!--end protocols-->   
+      <div class="tab-pane" id="modeling"></div><!--end modeling-->
       <div class="tab-pane" id="module1">
+          <div id="wiki-module1"></div>
       </div><!--end module1-->
 
-      <div class="tab-pane" id="module2">Module2</div>
-      <div class="tab-pane" id="module3">Module3</div>
-      <div class="tab-pane" id="module4">Module4</div>
+      <div class="tab-pane" id="module2">
+          <div id="wiki-module2"></div>
+      </div><!--end module2-->
+      <div class="tab-pane" id="module3">
+          <div id="wiki-module3"></div>
+      </div><!--end module3-->
+      <div class="tab-pane" id="module4">
+          <div id="wiki-module4"></div>
+      </div><!--end module4-->
     </div> <!-- tab-content -->
-
   </div><!-- container -->
   </div><!-- well -->
 
