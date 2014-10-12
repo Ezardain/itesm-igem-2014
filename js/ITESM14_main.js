@@ -15,7 +15,7 @@ $(document).on("scroll",function(){
     }
 });
 
-$('#show-menu').on('click', function(e) {
+$(document).on('click', '#show-menu', function(e) {
     e.preventDefault();
     if($('.left-menu').is(":visible")) {
        $('.left-menu').hide();
@@ -122,14 +122,28 @@ $(document).ready(function(){
   });
 });
 
+
+
 // Javascript to enable link to tab
 var hash = document.location.hash;
 var prefix = "tab_";
+
 if (hash) {
     $('.nav-tabs a[href='+hash.replace(prefix,"")+']').tab('show');
+    $(hash.replace(prefix,"") + 'header').show();
+    window.scrollTo(0,0);
 }
 
 // Change hash for page-reload
-$('.nav-tabs a').on('shown', function (e) {
+$('.nav-tabs a').on('shown.bs.tab', function (e) {
     window.location.hash = e.target.hash.replace("#", "#" + prefix);
+});
+
+//Javascript to enable link to tab
+$('.dropdown-menu a').click(function() {
+var url = document.location.toString();
+  if (url.match('#')) {
+      $('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show');
+      window.scrollTo(0,0);
+  }
 });
