@@ -122,6 +122,27 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $("a[href='#cancer-mexico']").on('shown.bs.tab', function(){
+    $("#cancer-mexico-header").show();
+    $("#kids-health-header").hide();
+    $("#3k-cancer-header").hide();
+    document.title = "Cancer in México";
+  });
+  $("a[href='#kids-health]").on('shown.bs.tab', function(){
+    $("#cancer-mexico-header").hide();
+    $("#kids-health-header").show();
+    $("#3k-cancer-header").hide();
+    document.title = "Kids and Health";
+  });
+  $("a[href='#3k-cancer']").on('shown.bs.tab', function(){
+   $("#cancer-mexico-header").hide();
+    $("#kids-health-header").hide();
+    $("#3k-cancer-header").show();
+    document.title = "3K Against Cancer";
+  });
+});
+
 
 
 // Javascript to enable link to tab
