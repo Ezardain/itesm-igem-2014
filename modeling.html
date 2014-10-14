@@ -121,6 +121,51 @@
 			<script type="text/javascript">
 			katex.render("\\frac{dI}{dt}= a_0+\\frac{aR^*(t)}{K_M+R^*(t)}-bI(t)", eq3);
 			</script>
+		<p>
+		The interactions for the AHL are more complicate than the others. It is involved in the active LuxR's reaction. It is related with the LuxI concentration, adding a linear term k<sub>0</sub>I(t) from the LuxI concentration. Moreover, we must consider that the degradation of a LuxR-AHL molecule implies the creation of 2 AHL molecules, adding a term 2k<sub>2</sub>R<sup>*</sup>(t).
+		</p>
+		<p>
+		Finally, there's also an interchange in the membrane, between the AHL inside and outside the bacteria. How fast this interchange occurs depends strongly on the membrane structure and the concentrations inside and outside the cell, which tends to created an equilibrium. Together, these interactions give us the following differential equation for the AHL inside the cell:
+		</p>
+		<p><span id="eq4">...</span></p>
+			<script type="text/javascript">
+			katex.render("\\frac{dA_{ext}}{dt}= pr\\left(A(t)-A_{ext}(t)\\right)-dA_{ext}(t)", eq4);
+			</script>
+		<p>
+		For the bacteriophage production, we will consider only the production of the slowest part of the operon corresponding to the phague's parts, this will be also described with another Hill equation. We must include a diffusion parameter that will describe the amount of bacteriophagues that cross the membrane to the outside and will take into account the time required to ensemble the bacteriophague after the production of its components.
+		</p>
+		<p><span id="eq5">...</span></p>
+			<script type="text/javascript">
+			katex.render("\\frac{dB_{in}}{dt}= \\frac{bR^*(t)}{K_M+R^*(t)}-sB_{in}(t)", eq5);
+			</script>
+		<p>
+		Finally we write an expression for the amount of phague outside the cells. Here we assume again an uniform production for all the bacterias and add also a diffusion term for the amount of phague that dissipates away from the population and a binding parameter r<sub>b</sub> for the amount of phague that binds to the cancer cells, this last parameter depends on the population of cancer cells:
+		</p>
+		<p><span id="eq6">...</span></p>
+			<script type="text/javascript">
+			katex.render("\\frac{dB_{ext}}{dt}= (sp-l-r_b)B_{ext}(t)", eq6);
+			</script>
+		<p>
+		Here r<sub>b</sub>B<sub>ext</sub>(t)  is the binding rate of the bacteriophage. If we want to predict the amount of cancer cells that are bound to a bacteriophague, the treated cells, we have to consider an stochastic model, taking into account that the amount of phagues bound to the cell will follows a binomial distribution (Smith H. and Trevino R., 2009):		
+		</p>
+		<p><span id="eq7">...</span></p>
+			<script type="text/javascript">
+			katex.render("p_i=\\binom{N}{i}p^i(1-p)^{N-i}", eq7);
+			</script>
+		<p>
+		Where p<sub>i</sub> is the probability for having <em>i</em> phagues bound to a given cell, <em>p</em> is the probability for a binding site to be occupied and <em>N</em> is the number of binding sites in the cell. From this we can have an expected value of <em>Np</em> and a standard deviation of √<em>Np(1-p)</em>. More over we can estimate a maximum E<sub>max</sub> and a minimum E<sub>min</sub> for the number of phages bound per cancer cell.
+		</p>
+		<p>
+		Taking this consideration together with the previous differential equations, we can write an expression for rate of the minimum and maximum possible values of treated cell.
+		</p>
+		<p><span id="eq8">...</span></p>
+			<script type="text/javascript">
+			katex.render("\\frac{dCells_{treated_{min}}}{dt}= \\frac{r_bB_{ext}(t)}{E_{max}}", eq8);
+			</script>
+		<p><span id="eq8">...</span></p>
+			<script type="text/javascript">
+			katex.render("\\frac{dCells_{treated_{max}}}{dt}= \frac{r_bB_{ext}(t)}{E_{min}}", eq8);
+			</script>
     <hr>
  
 
