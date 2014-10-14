@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/katex.min.css" rel="stylesheet" type="text/css">
+		<script src="js/katex.min.js" type="text/javascript"></script>
+	</head>
+
+<div id="wiki-body">
+
+<body>
+
+    <h1>Quorum Sensing</h1>
+		<p>
+		We built a mathematical model for the quorum sensing regulations on the basis of the Hill equation and made some slight modifications of the simple model exposed by Brian Ingalls in <em>''Mathematical Modelling in Systems Biology: An Introduction''</em>, when referring to the work of Sally James about the mathematical modelling the quorum sensing regulations of the V. fischeri (Ingalls, 2012). 
+		</p>
+		<p>
+		First of all we define the different parameters we will be using:
+		</p>
+		<center>
+		<table border=1 width="60%">
+            <col style="width:20%">
+            <col style="width:80%">
+                <tr>
+					<td >A</td>
+					<td >Average concentration of the AHL inside the E. Coli </td>
+				</tr>
+				<tr>
+					<td >A<sub>ext</sub></td>
+					<td >Average concentration of the AHL outside the E. Coli </td>
+				</tr>
+				<tr>
+					<td >K<sub>M</sub></td>
+					<td >The activation coefficient for the corresponding promoter  </td>
+				</tr>
+				<tr>
+					<td >R<sub>T</sub></td>
+					<td >Total concentration of LuxR monomers </td>
+				</tr>
+				<tr>
+					<td >R<sup>*</sub></td>
+					<td >Concentration of active LuxR compound by a LuxR homodimer \newline bound to 2 molecules of AHL</td>
+				</tr>
+				<tr>
+					<td >R</td>
+					<td >Concentration of unbound LuxR  </td>
+				</tr>
+				<tr>
+					<td >p</td>
+					<td >Population parameter</td>
+				</tr>
+				<tr>
+					<td >d</td>
+					<td >Diffusion parameter for the autoinductor outside the cell </td>
+				</tr>
+				<tr>
+					<td >B<sub>in</sub></td>
+					<td >Bacteriophage concentration inside the E. Coli </td>
+				</tr>
+				<tr>
+					<td >B<sub>ext</sub></td>
+					<td >Bacteriophage concentration outside the E. Coli </td>
+				</tr>
+				<tr>
+					<td >l</td>
+					<td >Diffusion parameter for the bacteriophage outside the cell</td>
+				</tr>
+				<tr>
+					<td >k<sub>0</sub></td>
+					<td >Rate constant for the AHL generation due to the LuxI concentration </td>
+				</tr>
+				<tr>
+					<td >k<sub>1</sub></td>
+					<td >Rate constant for the LuxR activation reaction </td>
+				</tr>
+				<tr>
+					<td >k<sub>2</sub></td>
+					<td >Degradation/dissolution parameter for the LuxR-AHL</td>
+				</tr>
+				<tr>
+					<td >b</td>
+					<td >Degradation/dissolution parameter for the LuxI </td>
+				</tr>
+				<tr>
+					<td >r</td>
+					<td >Rate of AHL diffusion across the membrane for each cell </td>
+				</tr>
+				<tr>
+					<td >s</td>
+					<td >Rate of bacteriophague diffusion across the membrane for each cell </td>
+				</tr>
+				<tr>
+					<td >r<sub>b</sub></td>
+					<td >Binding rate for the bacteriophages that binds to the cancer cells </td>
+				</tr>
+          </table>
+		  </center>
+		<p>
+		We start our analysis with the active LuxR. Notice that the amount of unbound LuxR in a given moment is given by R<sub>T</sub>-2R<sup>*</sup>. this is because each LuxR-AHL complex requires an homodimer to be generated. The reaction in which this complex is involved, can be written as:
+		</p>
+		<p>
+		We start our analysis with the active LuxR. Notice that the amount of unbound LuxR in a given moment is given by R<sub>T</sub>-2R<sup>*</sup>. this is because each LuxR-AHL complex requires an homodimer to be generated. The reaction in which this complex is involved, can be written as:
+		</p>
+		<p><span id="eq1">...</span></p>
+			<script type="text/javascript">
+			katex.render("2A+2R\Longleftrightarrow R^*", eq1);
+			</script>
+		<p>
+		Using simple chemical kinetics and adding a degradation/dissolution term we get the following differential equation:
+		</p>
+		<p><span id="eq2">...</span></p>
+			<script type="text/javascript">
+			katex.render("\\frac{dR^*}{dt}=k_1\\left(A(t)\\right)^2\\left(R_T-2R^*(t)\\right)^2-k_2R^*(t)", eq2);
+			</script>
+		<p>
+		For the LuxI we use the Hill equation treated by Brian Ingalls (Ingalls, 2012), with a Hill coefficient equal 1, a basal expression level of a<sub>0</sub> and the respective degradation/dissolution term:
+		</p>
+		<p><span id="eq3">...</span></p>
+			<script type="text/javascript">
+			katex.render("\\frac{dI}{dt}= a_0+\\frac{aR^*(t)}{K_M+R^*(t)}-bI(t)", eq3);
+			</script>
+    <hr>
+ 
+
+</body>
+
+</div>
+</html>
+
