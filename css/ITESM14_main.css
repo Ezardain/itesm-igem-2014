@@ -189,6 +189,39 @@ h1 {
 
 /*============= Fin video responsivo ==============*/
 
+/*============= Modulos pagina de inicio ==========*/
+
+#modulos h1 {
+  position: absolute;
+  top: 0;
+  color: #f4ff3b;
+  font-weight: 700;
+  font-size: 2.5vw;
+  border-bottom: 3px solid;
+}
+#modulos .texto-modulos p {
+  color: #ffffff;
+  font-weight:300; 
+  font-size:1.6vw; 
+  text-align: center;
+  padding-top: 100px;
+}
+#modulos .texto-modulos{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0,0,0,0.3);
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+#modulos .texto-modulos:hover {
+  opacity: 1;
+}
+
+
 
 /*=================== Footer ===================*/
 

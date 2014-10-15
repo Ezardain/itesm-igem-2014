@@ -1,10 +1,10 @@
 /*Team cards*/
-#team-members p {
+#wiki-content #team-members p {
   padding: 0;
   margin: 0;
   display: inline-block;
 }
-#team-members a {
+#wiki-content #team-members a {
   color: #CC004D;
   text-decoration: none;
   -moz-transition: all 0.2s ease-in-out;
@@ -12,23 +12,23 @@
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-#team-members #image-team a {
+#wiki-content #team-members #image-team a {
   color: #FFD82E;
   text-decoration: none;
 }
-#team-members a:hover {
+#wiki-content #team-members a:hover {
   color: #B20043;
 }
-#team-members #image-team a:hover {
+#wiki-content #team-members #image-team a:hover {
   color: #F4FF3B;
 }
-#team-members hr {
+#wiki-content #team-members hr {
 	border-top: 2px solid #eee;
 }
-#team-members {
+#wiki-content #team-members {
 	margin: 5%;
 }
-#team-members .bussinesscard{
+#wiki-content #team-members .bussinesscard{
 	height:400px;
 	width:500px;	
 	overflow:hidden;
@@ -38,7 +38,7 @@
 	display: inline-block;
 	@include translate(-50%,-50%);	
 }
-#team-members #femsa-btc .bussinesscard{
+#wiki-content #team-members #femsa-btc .bussinesscard{
   width:99%;  
   height: 500px;
   overflow:hidden;
@@ -50,7 +50,7 @@
   display: inline-block;
   @include translate(-50%,-50%);  
 }
-#team-members #team-assistants .bussinesscard{
+#wiki-content #team-members #team-assistants .bussinesscard{
   height:400px;
   width:500px;  
   position: static;
@@ -58,13 +58,13 @@
   box-shadow: 0px 0px 43px -10px black; 
   display: inline-block;
 }
-#team-members .bussinesscard .flip {
+#wiki-content #team-members .bussinesscard .flip {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-#team-members .bussinesscard .front {
+#wiki-content #team-members .bussinesscard .front {
   z-index: 11;
   width: 100%;
   position: static;
@@ -80,34 +80,34 @@
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
-#team-members .bussinesscard .front .top {
+#wiki-content #team-members .bussinesscard .front .top {
   height: 50%;
   box-shadow: 0px 0px 20px #C7004B;
   background: #ff0060;
 }
-#team-members #femsa-btc .bussinesscard .front .top {
+#wiki-content #team-members #femsa-btc .bussinesscard .front .top {
   height: 70%;
   box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
   background: #ff0060;
 }
-#team-members #team-assistants .bussinesscard .front .top {
+#wiki-content #team-members #team-assistants .bussinesscard .front .top {
   height: 50%;
   box-shadow: 0px 0px 20px #C7004B;
 }
-#team-members #image-team .bussinesscard .front .top {
+#wiki-content #team-members #image-team .bussinesscard .front .top {
   box-shadow: 0px 0px 20px #626618;
   background: #F4FF3B;
 }
-#team-members #team-assistants .bussinesscard .front .top {
+#wiki-content #team-members #team-assistants .bussinesscard .front .top {
   box-shadow: 0px 0px 20px #626618;
   background: #36d8c5;
 }
-#team-members .bussinesscard .front .top:after {
+#wiki-content #team-members .bussinesscard .front .top:after {
   position: absolute;
   content: '';
   pointer-events: none;
 }
-#team-members .bussinesscard .front .top:after {
+#wiki-content #team-members .bussinesscard .front .top:after {
   left: 50%;
   width: 4em;
   height: 4em;
@@ -120,7 +120,7 @@
   background: inherit;
   background: #ff0060;
 }
-#team-members #femsa-btc .bussinesscard .front .top:after {
+#wiki-content #team-members #femsa-btc .bussinesscard .front .top:after {
   left: 50%;
   width: 4em;
   height: 4em;
@@ -133,13 +133,13 @@
   background: inherit;
   background: #ff0060;
 }
-#team-members #image-team .bussinesscard .front .top:after {
+#wiki-content #team-members #image-team .bussinesscard .front .top:after {
   background: #F4FF3B;
 }
-#team-members #team-assistants .bussinesscard .front .top:after {
+#wiki-content #team-members #team-assistants .bussinesscard .front .top:after {
   background: #36d8c5;
 }
-#team-members .bussinesscard .front .top .logo {
+#wiki-content #team-members .bussinesscard .front .top .logo {
   display: inline-block;
   color: #fff;
   z-index: 11;
@@ -154,7 +154,7 @@
   margin-top: .4em;
   font-size: 4em;
 }
-#team-members .bussinesscard .front .top .logo img{
+#wiki-content #team-members .bussinesscard .front .top .logo img{
   height: 2.5em;
   width: 2.5em;
   position: relative;
@@ -165,13 +165,13 @@
   transform: translateX(-50%);
   left: 50%;
 }
-#team-members #team-assistants .logo img{
+#wiki-content #team-members #team-assistants .logo img{
    height: 2.5em;
   width: 2.5em;
   position: relative;
   left: 50%;
 }
-#team-members .bussinesscard .front .nametroduction {
+#wiki-content #team-members .bussinesscard .front .nametroduction {
   margin-top: 2.4em;
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -180,7 +180,7 @@
   z-index: 8;
   font-weight: 300;
 }
-#team-members #femsa-btc .bussinesscard .front .nametroduction {
+#wiki-content #team-members #femsa-btc .bussinesscard .front .nametroduction {
   margin-top: 1%;
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -189,14 +189,14 @@
   z-index: 8;
   font-weight: 300;
 }
-#team-members .bussinesscard .front .name {
+#wiki-content #team-members .bussinesscard .front .name {
   color: #CC004D;
   font-weight: 400;
   font-size: 4.9em;
   text-align: center;
   position: relative;
 }
-#team-members #team-assistants .bussinesscard .front .top .nametroduction .name {
+#wiki-content #team-members #team-assistants .bussinesscard .front .top .nametroduction .name {
   color: #36d8c5;
   font-weight: 400;
   font-size: 4.9em;
@@ -204,13 +204,13 @@
   position: relative;
   top:25px;
 }
-#team-members #femsa-btc .bussinesscard .front .name {
+#wiki-content #team-members #femsa-btc .bussinesscard .front .name {
   color: #0039a6;
 }
-#team-members #image-team .bussinesscard .front .name {
+#wiki-content #team-members #image-team .bussinesscard .front .name {
   color: #FFD82E;
 }
-#team-members .bussinesscard .front .name:after {
+#wiki-content #team-members .bussinesscard .front .name:after {
   content: '';
   position: static;
   top: 1.3em;
@@ -220,37 +220,37 @@
   height: 1px;
   background: #CC004D;
 }
-#team-members #image-team .bussinesscard .front .name:after {
+#wiki-content #team-members #image-team .bussinesscard .front .name:after {
   background: #FFD82E;
 }
-#team-members .bussinesscard .front .introduction {
+#wiki-content #team-members .bussinesscard .front .introduction {
   text-align: center;
   color: #CC004D;
   font-style: italic;
   font-size: 1.5em;
 }
-#team-members #team-assistants .bussinesscard .front .top .nametroduction .introduction {
+#wiki-content #team-members #team-assistants .bussinesscard .front .top .nametroduction .introduction {
   color: #36d8c5;
   font-style: italic;
   font-size: 1.5em;
   position: relative;
   margin-top: 5%;
 }
-#team-members #team-assistants .bussinesscard .front .top .nametroduction .mayor span{
+#wiki-content #team-members #team-assistants .bussinesscard .front .top .nametroduction .mayor span{
   color: #36d8c5;
   font-size: 1.5em;
   display: inline-block;
 }
-#team-members #team-assistants .bussinesscard .front .top .nametroduction .mayor{
+#wiki-content #team-members #team-assistants .bussinesscard .front .top .nametroduction .mayor{
   left: 30px;
   position: relative;
   margin-left: 31.5%;
   font-style: italic;
 }
-#team-members #image-team .bussinesscard .front .introduction {
+#wiki-content #team-members #image-team .bussinesscard .front .introduction {
   color: #FFD82E;
 }
-#team-members .bussinesscard .front .description p{
+#wiki-content #team-members .bussinesscard .front .description p{
   color: #CC004D;
   text-align: justify;
   margin-left: 1em;
@@ -262,10 +262,10 @@
   -webkit-transform: translateY(400%);
   transform: translateY(400%);
 }
-#team-members #image-team .bussinesscard .front .description p{
+#wiki-content #team-members #image-team .bussinesscard .front .description p{
   color: #FFD82E;
 }
-#team-members .bussinesscard .front .contact {
+#wiki-content #team-members .bussinesscard .front .contact {
   color: #CC004D;
   margin-left: 2em;
   font-weight: 300;
@@ -275,20 +275,20 @@
   -webkit-transform: translateY(400%);
   transform: translateY(400%);
 }
-#team-members .bussinesscard .front .contact span {
+#wiki-content #team-members .bussinesscard .front .contact span {
   color: #CC004D;
   font-size: 1.7em;
   width: 1.3em;
   display: inline-block;
 }
-#team-members #image-team .bussinesscard .front .contact span {
+#wiki-content #team-members #image-team .bussinesscard .front .contact span {
   color: #FFD82E;
 }
-#team-members .bussinesscard .front .contact a {
+#wiki-content #team-members .bussinesscard .front .contact a {
   position: relative;
   bottom: .24em;
 }
-#team-members .bussinesscard .back {
+#wiki-content #team-members .bussinesscard .back {
   width: 100%;
   height: 100%;
   background: #fff;
@@ -296,7 +296,7 @@
   position: static;
 }
 
-#team-members .tooltip {
+#wiki-content #team-members .tooltip {
   position: static;
   left: 1em;
   bottom: 1em;
@@ -307,14 +307,14 @@
 }
 
 /* HOVER ANIMATIONS */
-#team-members .front .top .logo, .front .top, .front .top:after, .front .nametroduction, .front .contact, .front .description p {
+#wiki-content #team-members .front .top .logo, .front .top, .front .top:after, .front .nametroduction, .front .contact, .front .description p {
   -moz-transition: 0.7s all ease-in-out;
   -o-transition: 0.7s all ease-in-out;
   -webkit-transition: 0.7s all ease-in-out;
   transition: 0.7s all ease-in-out;
 }
 
-#team-members .flip:hover .front .top .logo {
+#wiki-content #team-members .flip:hover .front .top .logo {
   margin-top: .28em;
   font-size: 1.3em;
   margin-left: .15em;
@@ -325,29 +325,29 @@
   left: 0;
 }
 
-#team-members .flip:hover .front .top {
+#wiki-content #team-members .flip:hover .front .top {
   height: 15%;
 }
-#team-members .flip:hover .front .top:after {
+#wiki-content #team-members .flip:hover .front .top:after {
   width: 2em;
   height: 2em;
   bottom: 23.5em;
 }
 
-#team-members .flip:hover .front .nametroduction {
+#wiki-content #team-members .flip:hover .front .nametroduction {
   -moz-transform: translateY(400%);
   -ms-transform: translateY(400%);
   -webkit-transform: translateY(400%);
   transform: translateY(400%);
 }
 
-#team-members .flip:hover .front .contact {
+#wiki-content #team-members .flip:hover .front .contact {
   -moz-transform: translateY(-90%);
   -ms-transform: translateY(-90%);
   -webkit-transform: translateY(-90%);
   transform: translateY(-90%);
 }
-#team-members .flip:hover .front .description p{
+#wiki-content #team-members .flip:hover .front .description p{
   -moz-transform: translateY(-60%);
   -ms-transform: translateY(-60%);
   -webkit-transform: translateY(-60%);
