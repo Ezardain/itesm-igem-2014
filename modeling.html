@@ -2,8 +2,9 @@
 <div id="wiki-body">
 
 <body>
-	<section id="column">
+	
     <h1>Quorum Sensing: Modeling</h1>
+	<section id="column">
 		<p>
 		We built a mathematical model for the quorum sensing regulations on the basis of the Hill equation and made some slight modifications of the simple model exposed by Brian Ingalls in <em>''Mathematical Modelling in Systems Biology: An Introduction''</em>, when referring to the work of Sally James about the mathematical modelling the quorum sensing regulations of the V. fischeri (Ingalls, 2012). 
 		</p>
@@ -15,80 +16,81 @@
             <col style="width:20%">
             <col style="width:80%">
                 <tr>
-					<td >A</td>
+					<td>A</td>
 					<td >Average concentration of the AHL inside the E. Coli </td>
 				</tr>
 				<tr>
-					<td >A<sub>ext</sub></td>
+					<td>A<sub>ext</sub></td>
 					<td >Average concentration of the AHL outside the E. Coli </td>
 				</tr>
 				<tr>
-					<td >K<sub>M</sub></td>
+					<td>K<sub>M</sub></td>
 					<td >The activation coefficient for the corresponding promoter  </td>
 				</tr>
 				<tr>
-					<td >R<sub>T</sub></td>
+					<td>R<sub>T</sub></td>
 					<td >Total concentration of LuxR monomers </td>
 				</tr>
 				<tr>
-					<td >R<sup>*</sub></td>
+					<td>R<sup>*</sub></td>
 					<td >Concentration of active LuxR compound by a LuxR homodimer \newline bound to 2 molecules of AHL</td>
 				</tr>
 				<tr>
-					<td >R</td>
+					<td>R</td>
 					<td >Concentration of unbound LuxR  </td>
 				</tr>
 				<tr>
-					<td >p</td>
+					<td>p</td>
 					<td >Population parameter</td>
 				</tr>
 				<tr>
-					<td >d</td>
+					<td>d</td>
 					<td >Diffusion parameter for the autoinductor outside the cell </td>
 				</tr>
 				<tr>
-					<td >B<sub>in</sub></td>
+					<td>B<sub>in</sub></td>
 					<td >Bacteriophage concentration inside the E. Coli </td>
 				</tr>
 				<tr>
-					<td >B<sub>ext</sub></td>
+					<td>B<sub>ext</sub></td>
 					<td >Bacteriophage concentration outside the E. Coli </td>
 				</tr>
 				<tr>
-					<td >l</td>
+					<td>l</td>
 					<td >Diffusion parameter for the bacteriophage outside the cell</td>
 				</tr>
 				<tr>
-					<td >k<sub>0</sub></td>
+					<td>k<sub>0</sub></td>
 					<td >Rate constant for the AHL generation due to the LuxI concentration </td>
 				</tr>
 				<tr>
-					<td >k<sub>1</sub></td>
+					<td>k<sub>1</sub></td>
 					<td >Rate constant for the LuxR activation reaction </td>
 				</tr>
 				<tr>
-					<td >k<sub>2</sub></td>
+					<td>k<sub>2</sub></td>
 					<td >Degradation/dissolution parameter for the LuxR-AHL</td>
 				</tr>
 				<tr>
-					<td >b</td>
+					<td>b</td>
 					<td >Degradation/dissolution parameter for the LuxI </td>
 				</tr>
 				<tr>
-					<td >r</td>
+					<td>r</td>
 					<td >Rate of AHL diffusion across the membrane for each cell </td>
 				</tr>
 				<tr>
-					<td >s</td>
+					<td>s</td>
 					<td >Rate of bacteriophague diffusion across the membrane for each cell </td>
 				</tr>
 				<tr>
-					<td >r<sub>b</sub></td>
+					<td>r<sub>b</sub></td>
 					<td >Binding rate for the bacteriophages that binds to the cancer cells </td>
 				</tr>
           </table>
 		  </center>
 		<p>
+		<br></br>
 		We start our analysis with the active LuxR. Notice that the amount of unbound LuxR in a given moment is given by R<sub>T</sub>-2R<sup>*</sup>. this is because each LuxR-AHL complex requires an homodimer to be generated. The reaction in which this complex is involved, can be written as:
 		</p>
 		<p><center><span id="eq1">...</span></center></p>
