@@ -115,8 +115,36 @@ h1.firstHeading {
 	font-weight: lighter;
 	padding-left: 0px;
 }
+	
+#list{
+	padding-left:0px;
+	list-style-type:none;
+	text-align:center;
+	}
+	
+#other-table th{
+  background-color: #ff0070;
+  color: #ffffff;
+  text-align:center;
+  border-left: 5px double white;
+  border-right: 5px double white;
+  border-bottom: 5px double white;
+  border-top: 5px double white;
+  font-size: 1.5vw;
+  font-weight: 400;
+ 
+  }
+ 
+ #other-table td{
+ vertical-align:top;
+ border-bottom: 2px dotted;
+ text-align:left;
+ padding-left: 15px;
+ font-size: 1.2vw;
+   font-weight: lighter;
+ }
 
-table, td {
+table,td{
    border-collapse:collapse;
    padding-bottom: 3.5px;
    padding-top: 3.5px;
