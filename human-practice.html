@@ -39,6 +39,11 @@
       $("#wiki-footer").load("footer.html"); 
     });
   </script>
+  <script> 
+    $(function(){
+      $("#wiki-3k-cancer").load("3k-cancer.html"); 
+    });
+  </script>
 </head>
 
 <div id="wiki-body">
@@ -80,7 +85,9 @@
     <div class="tab-content">
       <div class="tab-pane active" id="cancer-mexico">Cancer in México</div>
       <div class="tab-pane" id="kids-health">Kids and Health</div>
-      <div class="tab-pane" id="3k-cancer">3K</div>
+      <div class="tab-pane" id="3k-cancer">
+        <div id="wiki-3k-cancer"></div>
+      </div>
     </div> <!-- tab-content -->
   </div><!-- container -->
   </div><!-- well -->

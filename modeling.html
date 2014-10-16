@@ -1,0 +1,165 @@
+
+<div id="wiki-body">
+
+<body>
+	<section id="column">
+    <h1>Quorum Sensing: Modeling</h1>
+		<p>
+		We built a mathematical model for the quorum sensing regulations on the basis of the Hill equation and made some slight modifications of the simple model exposed by Brian Ingalls in <em>''Mathematical Modelling in Systems Biology: An Introduction''</em>, when referring to the work of Sally James about the mathematical modelling the quorum sensing regulations of the V. fischeri (Ingalls, 2012). 
+		</p>
+		<p>
+		First of all we define the different parameters we will be using:
+		</p>
+		<center>
+		<table border=1 width="60%">
+            <col style="width:20%">
+            <col style="width:80%">
+                <tr>
+					<td >A</td>
+					<td >Average concentration of the AHL inside the E. Coli </td>
+				</tr>
+				<tr>
+					<td >A<sub>ext</sub></td>
+					<td >Average concentration of the AHL outside the E. Coli </td>
+				</tr>
+				<tr>
+					<td >K<sub>M</sub></td>
+					<td >The activation coefficient for the corresponding promoter  </td>
+				</tr>
+				<tr>
+					<td >R<sub>T</sub></td>
+					<td >Total concentration of LuxR monomers </td>
+				</tr>
+				<tr>
+					<td >R<sup>*</sub></td>
+					<td >Concentration of active LuxR compound by a LuxR homodimer \newline bound to 2 molecules of AHL</td>
+				</tr>
+				<tr>
+					<td >R</td>
+					<td >Concentration of unbound LuxR  </td>
+				</tr>
+				<tr>
+					<td >p</td>
+					<td >Population parameter</td>
+				</tr>
+				<tr>
+					<td >d</td>
+					<td >Diffusion parameter for the autoinductor outside the cell </td>
+				</tr>
+				<tr>
+					<td >B<sub>in</sub></td>
+					<td >Bacteriophage concentration inside the E. Coli </td>
+				</tr>
+				<tr>
+					<td >B<sub>ext</sub></td>
+					<td >Bacteriophage concentration outside the E. Coli </td>
+				</tr>
+				<tr>
+					<td >l</td>
+					<td >Diffusion parameter for the bacteriophage outside the cell</td>
+				</tr>
+				<tr>
+					<td >k<sub>0</sub></td>
+					<td >Rate constant for the AHL generation due to the LuxI concentration </td>
+				</tr>
+				<tr>
+					<td >k<sub>1</sub></td>
+					<td >Rate constant for the LuxR activation reaction </td>
+				</tr>
+				<tr>
+					<td >k<sub>2</sub></td>
+					<td >Degradation/dissolution parameter for the LuxR-AHL</td>
+				</tr>
+				<tr>
+					<td >b</td>
+					<td >Degradation/dissolution parameter for the LuxI </td>
+				</tr>
+				<tr>
+					<td >r</td>
+					<td >Rate of AHL diffusion across the membrane for each cell </td>
+				</tr>
+				<tr>
+					<td >s</td>
+					<td >Rate of bacteriophague diffusion across the membrane for each cell </td>
+				</tr>
+				<tr>
+					<td >r<sub>b</sub></td>
+					<td >Binding rate for the bacteriophages that binds to the cancer cells </td>
+				</tr>
+          </table>
+		  </center>
+		<p>
+		We start our analysis with the active LuxR. Notice that the amount of unbound LuxR in a given moment is given by R<sub>T</sub>-2R<sup>*</sup>. this is because each LuxR-AHL complex requires an homodimer to be generated. The reaction in which this complex is involved, can be written as:
+		</p>
+		<p><center><span id="eq1">...</span></center></p>
+			<script type="text/javascript">
+			katex.render("2A+2R \\leftarrow\\rightarrow R^*", eq1);
+			</script>
+		<p>
+		Using simple chemical kinetics and adding a degradation/dissolution term we get the following differential equation:
+		</p>
+		<p><center><span id="eq2">...</span></center></p>
+			<script type="text/javascript">
+			katex.render("\\frac{dR^*}{dt}=k_1\\left(A(t)\\right)^2\\left(R_T-2R^*(t)\\right)^2-k_2R^*(t)", eq2);
+			</script>
+		<p>
+		For the LuxI we use the Hill equation treated by Brian Ingalls (Ingalls, 2012), with a Hill coefficient equal 1, a basal expression level of a<sub>0</sub> and the respective degradation/dissolution term:
+		</p>
+		<p><center><span id="eq3">...</span></center></p>
+			<script type="text/javascript">
+			katex.render("\\frac{dI}{dt}= a_0+\\frac{aR^*(t)}{K_M+R^*(t)}-bI(t)", eq3);
+			</script>
+		<p>
+		The interactions for the AHL are more complicate than the others. It is involved in the active LuxR's reaction. It is related with the LuxI concentration, adding a linear term k<sub>0</sub>I(t) from the LuxI concentration. Moreover, we must consider that the degradation of a LuxR-AHL molecule implies the creation of 2 AHL molecules, adding a term 2k<sub>2</sub>R<sup>*</sup>(t).
+		</p>
+		<p>
+		Finally, there's also an interchange in the membrane, between the AHL inside and outside the bacteria. How fast this interchange occurs depends strongly on the membrane structure and the concentrations inside and outside the cell, which tends to created an equilibrium. Together, these interactions give us the following differential equation for the AHL inside the cell:
+		</p>
+		<p><center><span id="eq4">...</span></center></p>
+			<script type="text/javascript">
+			katex.render("\\frac{dA_{ext}}{dt}= pr\\left(A(t)-A_{ext}(t)\\right)-dA_{ext}(t)", eq4);
+			</script>
+		<p>
+		For the bacteriophage production, we will consider only the production of the slowest part of the operon corresponding to the phague's parts, this will be also described with another Hill equation. We must include a diffusion parameter that will describe the amount of bacteriophagues that cross the membrane to the outside and will take into account the time required to ensemble the bacteriophague after the production of its components.
+		</p>
+		<p><center><span id="eq5">...</span></center></p>
+			<script type="text/javascript">
+			katex.render("\\frac{dB_{in}}{dt}= \\frac{bR^*(t)}{K_M+R^*(t)}-sB_{in}(t)", eq5);
+			</script>
+		<p>
+		Finally we write an expression for the amount of phague outside the cells. Here we assume again an uniform production for all the bacterias and add also a diffusion term for the amount of phague that dissipates away from the population and a binding parameter r<sub>b</sub> for the amount of phague that binds to the cancer cells, this last parameter depends on the population of cancer cells:
+		</p>
+		<p><center><span id="eq6">...</span></center></p>
+			<script type="text/javascript">
+			katex.render("\\frac{dB_{ext}}{dt}= (sp-l-r_b)B_{ext}(t)", eq6);
+			</script>
+		<p>
+		Here r<sub>b</sub>B<sub>ext</sub>(t)  is the binding rate of the bacteriophage. If we want to predict the amount of cancer cells that are bound to a bacteriophague, the treated cells, we have to consider an stochastic model, taking into account that the amount of phagues bound to the cell will follows a binomial distribution (Smith H. and Trevino R., 2009):		
+		</p>
+		<p><center><span id="eq7">...</span></center></p>
+			<script type="text/javascript">
+			katex.render("p_i=\\binom{N}{i}p^i(1-p)^{N-i}", eq7);
+			</script>
+		<p>
+		Where p<sub>i</sub> is the probability for having <em>i</em> phagues bound to a given cell, <em>p</em> is the probability for a binding site to be occupied and <em>N</em> is the number of binding sites in the cell. From this we can have an expected value of <em>Np</em> and a standard deviation of √<em>Np(1-p)</em>. More over we can estimate a maximum E<sub>max</sub> and a minimum E<sub>min</sub> for the number of phages bound per cancer cell.
+		</p>
+		<p>
+		Taking this consideration together with the previous differential equations, we can write an expression for rate of the minimum and maximum possible values of treated cell.
+		</p>
+		<p><center><span id="eq8">...</span></center></p>
+			<script type="text/javascript">
+			katex.render("\\frac{dCells_{treated_{min}}}{dt}= \\frac{r_bB_{ext}(t)}{E_{max}}", eq8);
+			</script>
+		<p><center><span  id="eq9">...</span></center></p>
+			<script type="text/javascript">
+			katex.render("\\frac{dCells_{treated_{max}}}{dt}= \\frac{r_bB_{ext}(t)}{E_{min}}", eq9);
+			</script>
+		
+    <hr>
+	</section>
+
+</body>
+
+</div>
+
+

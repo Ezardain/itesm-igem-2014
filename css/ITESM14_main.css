@@ -7,6 +7,9 @@
 a {
    color:#46008b
 }
+a:hover{
+ text-decoration: none;
+}
 
 /*Accordion*/
 .panel .panel-heading{
@@ -19,9 +22,6 @@ a {
 }
 .panel-body {
   font-size: 1.2vw;
-}
-a:hover{
- text-decoration: none;
 }
 /* end accordion */
 
