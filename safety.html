@@ -39,6 +39,11 @@
       $("#wiki-footer").load("footer.html"); 
     });
   </script>
+  <script> 
+    $(function(){
+      $("#wiki-safety-project").load("safety-project.html"); 
+    });
+  </script>
 </head>
 
 <div id="wiki-body">
@@ -92,7 +97,10 @@
 			</div>
 		</div>
 		<div class="tab-pane" id="safety-protocols">Safety protocols</div>
-		<div class="tab-pane" id="safety-project">Safety of the project</div>
+			
+		<div class="tab-pane" id="safety-project">
+			<div id="wiki-safety-project"></div>
+		</div><!--end safety project-->
     </div> <!-- tab-content -->
 
   </div><!-- container -->
