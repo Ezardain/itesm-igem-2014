@@ -147,11 +147,12 @@ h1.firstHeading {
 table,td{
    border-collapse:collapse;
    padding-bottom: 3.5px;
-   padding-top: 3.5px;
+   padding-top: 5px;
    padding-left: 10px;
    padding-right: 10px;
    font-size: 1.2vw;
    font-weight: lighter;
+   vertical-align:top;
 }
 td>strong{
   font-weight: 400;
