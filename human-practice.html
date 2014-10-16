@@ -44,6 +44,16 @@
       $("#wiki-3k-cancer").load("3k-cancer.html"); 
     });
   </script>
+  <script> 
+    /*$(function(){
+      $("#wiki-law-proposal").load("law-proposal.html"); 
+    });*/
+  </script>
+  <script> 
+    /*$(function(){
+      $("#wiki-kids-health").load("kids-health.html"); 
+    });*/
+  </script>
 </head>
 
 <div id="wiki-body">
@@ -57,7 +67,7 @@
 
 <div class="jumbotron" style="background-color:transparent; padding-top: 0; margin-bottom: 0; padding-bottom: 0; padding-left:0;">
     <div class="container">
-      <div id="cancer-mexico-header">
+      <div id="law-proposal-header">
         <img class="col-md-8 col-md-offset-2" style="padding:40px 0px 0px 0px" src="images/human-practice/cancer-mexico-header.svg">
         <h1 class="text-center col-md-8 col-md-offset-2" style="color: #f4ff3b; font-size: 7vw; font-weight: lighter;">Cancer in México</h1>
       </div>
@@ -77,14 +87,18 @@
 
     <!--===============================Tab navigation======================================-->
     <ul class="nav nav-tabs nav-justified" role="tablist" id="myTab" style="font-family: 'Yanone Kaffeesatz';">
-      <li class="active"><a id="cancer-mexico-tab" href="#cancer-mexico" role="tab" data-toggle="tab">Cancer in México</a></li>
+      <li class="active"><a id="law-proposal-tab" href="#law-proposal" role="tab" data-toggle="tab">Law Proposal</a></li>
       <li><a id="kids-health-tab" href="#kids-health" role="tab" data-toggle="tab">Kids and Health</a></li>
       <li><a id="3k-cancer-tab" href="#3k-cancer" role="tab" data-toggle="tab">3K Against Cancer</a></li>
     </ul>
     <!--===============================Tab content==================================================-->
     <div class="tab-content">
-      <div class="tab-pane active" id="cancer-mexico">Cancer in México</div>
-      <div class="tab-pane" id="kids-health">Kids and Health</div>
+      <div class="tab-pane active" id="law-proposal">
+        <div id="wiki-law-proposal"></div>
+      </div>
+      <div class="tab-pane" id="kids-health">
+        <div id="wiki-kids-health"></div>
+      </div>
       <div class="tab-pane" id="3k-cancer">
         <div id="wiki-3k-cancer"></div>
       </div>

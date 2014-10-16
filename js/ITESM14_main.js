@@ -123,26 +123,46 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $("a[href='#cancer-mexico']").on('shown.bs.tab', function(){
-    $("#cancer-mexico-header").show();
+  $("a[href='#law-proposal']").on('shown.bs.tab', function(){
+    $("#law-proposal-header").show();
     $("#kids-health-header").hide();
     $("#3k-cancer-header").hide();
     document.title = "Cancer in México";
   });
-  $("a[href='#kids-health]").on('shown.bs.tab', function(){
-    $("#cancer-mexico-header").hide();
+  $("a[href='#kids-health']").on('shown.bs.tab', function(){
+    $("#law-proposal-header").hide();
     $("#kids-health-header").show();
     $("#3k-cancer-header").hide();
     document.title = "Kids and Health";
   });
   $("a[href='#3k-cancer']").on('shown.bs.tab', function(){
-   $("#cancer-mexico-header").hide();
+   $("#law-proposal-header").hide();
     $("#kids-health-header").hide();
     $("#3k-cancer-header").show();
     document.title = "3K Against Cancer";
   });
 });
 
+$(document).ready(function(){
+  $("a[href='#overview-safety']").on('shown.bs.tab', function(){
+    $("#overview-safety-header").show();
+    $("#safety-protocols-header").hide();
+    $("#safety-project-header").hide();
+    document.title = "Safety Overview";
+  });
+  $("a[href='#safety-protocols']").on('shown.bs.tab', function(){
+    $("#overview-safety-header").hide();
+    $("#safety-protocols-header").show();
+    $("#safety-project-header").hide();
+    document.title = "Safety Protocols";
+  });
+  $("a[href='#safety-project']").on('shown.bs.tab', function(){
+    $("#overview-safety-header").hide();
+    $("#safety-protocols-header").hide();
+    $("#safety-project-header").show();
+    document.title = "Project Safety";
+  });
+});
 
 
 // Javascript to enable link to tab

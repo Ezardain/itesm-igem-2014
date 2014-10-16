@@ -10,8 +10,6 @@
   <!-- Javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-  <script src="js/jquery-1.11.0.min.js"></script>
   <script src="js/lightbox.min.js"></script>
 
   <!--CSS Reset -->
@@ -44,6 +42,11 @@
       $("#wiki-safety-project").load("safety-project.html"); 
     });
   </script>
+  <script> 
+    $(function(){
+      $("#wiki-safety-protocols").load("safety-protocols.html"); 
+    });
+  </script>
 </head>
 
 <div id="wiki-body">
@@ -61,11 +64,11 @@
         <h1 class="text-center" style="color: #f4ff3b; font-size: 7vw; font-weight: lighter; padding-top:30px;">Overview</h1>
         <img class="col-md-8 col-md-offset-2 " src="images/module1/module1header.svg">
       </div>
-      <div id="safety-protocols">
+      <div id="safety-protocols-header">
         <h1 class="text-center" style="color: #f4ff3b; font-size: 7vw; font-weight: lighter; padding-top:30px;">Safety Protocols</h1>
         <img class="col-md-8 col-md-offset-2 " src="images/module1/notebookheader.svg">
       </div>
-      <div id="safety-project">
+      <div id="safety-project-header">
         <h1 class="text-center" style="color: #f4ff3b; font-size: 7vw; font-weight: lighter; padding-top:30px;">Safety of the Project</h1>
         <img class="col-md-8 col-md-offset-2 " src="images/module1/module1header.svg">
       </div>
@@ -83,24 +86,27 @@
     </ul>
     <!--===============================Tab content==================================================-->
     <div class="tab-content">
-		<div class="tab-pane active" id="overview-safety">
-			<div style="margin-top:2%; font-size:2vw;">
-			<p>
-			Safety is one of the primary concerns for our team, specially due to the focus of the project in medicine. 
-			</p>
-			<p>
-			For a better insight we have split the safety sections on two, one based on the particularities of our project, and the design we developed to overcome the safety issues, the other part discusses details about the lab and the particular protocols we followed to ensure the safety against hazardous situations. 
-			</p>
-			<p>
-			We believe that these precautions along with good practices at the execution of the project will work to maintain and highlight safety in our lab and for our society.
-			</p>
-			</div>
-		</div>
-		<div class="tab-pane" id="safety-protocols">Safety protocols</div>
-			
-		<div class="tab-pane" id="safety-project">
-			<div id="wiki-safety-project"></div>
-		</div><!--end safety project-->
+  		<div class="tab-pane active" id="overview-safety">
+  			<div style="margin-top:2%; font-size:2vw;">
+    			<p>
+    			Safety is one of the primary concerns for our team, specially due to the focus of the project in medicine. 
+    			</p>
+    			<p>
+    			For a better insight we have split the safety sections on two, one based on the particularities of our project, and the design we developed to overcome the safety issues, the other part discusses details about the lab and the particular protocols we followed to ensure the safety against hazardous situations. 
+    			</p>
+    			<p>
+    			We believe that these precautions along with good practices at the execution of the project will work to maintain and highlight safety in our lab and for our society.
+    			</p>
+  			</div>
+  		</div>
+  		
+      <div class="tab-pane" id="safety-protocols">
+        <div id="wiki-safety-protocols"></div>  
+      </div>
+  			
+  		<div class="tab-pane" id="safety-project">
+  			<div id="wiki-safety-project"></div>
+  		</div><!--end safety project-->
     </div> <!-- tab-content -->
 
   </div><!-- container -->
