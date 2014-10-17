@@ -1,0 +1,105 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Colaboration</title>
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+
+  <!-- Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+
+  <!--CSS Reset -->
+  <!--<link href="http://2014.igem.org/Team:Tec-Monterrey/ITESM14_reset.css?action=raw&ctype=text/css" type="text/css" rel="stylesheet"> -->
+
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css?action=raw&ctype=text/css" type="text/css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!--Custom CSS -->
+  <link href="css/ITESM14_main.css" type="text/css" rel="stylesheet">
+  <link href="css/ITESM14_navbar.css" type="text/css" rel="stylesheet">
+  <link href="css/lightbox.css" rel="stylesheet" />
+  <link href="css/ITESM14_tab.css" type="text/css" rel="stylesheet">
+
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+  <script> 
+    $(function(){
+      $("#wiki-header").load("header.html"); 
+    });
+  </script> 
+  <script> 
+    $(function(){
+      $("#wiki-footer").load("footer.html"); 
+    });
+  </script>
+</head>
+
+<div id="wiki-body">
+
+  <script> 
+    $(function(){
+      $("#wiki-UANL").load("UANL.html"); 
+    });
+  </script>
+  <script> 
+    $(function(){
+      $("#wiki-colombia").load("colombia.html"); 
+    });
+  </script>
+
+<body>
+
+  <header id="wiki-header" class="initial-nav-scroll-up">
+  </header>
+
+<div id ="wiki-content" class="main-content">
+
+  <div class="jumbotron" style="background-color:transparent; padding-top: 0; margin-bottom: 0; padding-bottom: 0; padding-left:0;">
+    <div class="container">
+      <div id="UANL-header">
+        <h1 class="text-center col-md-8 col-md-offset-2" style="color: #f4ff3b; font-size: 7vw; font-weight: lighter; padding-top:30px;">UANL</h1>
+      </div>
+      <div id="colombia-header">
+        <h1 class="text-center col-md-8 col-md-offset-2" style="color: #f4ff3b; font-size: 7vw; font-weight: lighter; padding-top:30px;">Colombia</h1>
+      </div>
+      <img class="col-md-8 col-md-offset-2 " src="images/module1/notebookheader.svg">
+    </div>
+  </div>
+  <div class="well">
+  <div class="container">
+
+    <!--===============================Tab navigation======================================-->
+    <ul class="nav nav-tabs nav-justified" role="tablist" id="myTab" style="font-family: 'Yanone Kaffeesatz';">
+      <li class="active"><a id="UANL-tab" href="#UANL" role="tab" data-toggle="tab">UANL</a></li>
+      <li><a id="colombia-tab" href="#colombia" role="tab" data-toggle="tab">Colombia</a></li>
+    </ul>
+    <!--===============================Tab content==================================================-->
+    <div class="tab-content">
+      <div class="tab-pane" id="UANL">
+          <div id="wiki-UANL"></div>
+      </div><!--end UANL-->
+      <div class="tab-pane" id="colombia">
+          <div id="wiki-colombia"></div>
+      </div><!--end protocols-->   
+    </div> <!-- tab-content -->
+
+  </div><!-- container -->
+  </div><!-- well -->
+
+
+</body>
+
+<footer id="wiki-footer" >
+</footer>
+
+<script src="js/ITESM14_main.js"></script>
+
+</div>
+
+</html>
+
