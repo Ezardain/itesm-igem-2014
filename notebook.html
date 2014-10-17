@@ -19,18 +19,14 @@
           domain: "month",
           subDomain: "x_day",
           data: "notebook/notebook_data.json",
-          start: new Date(2014, 6),
+          start: new Date(2014, 5),
           cellSize: 20,
           cellPadding: 5,
           domainGutter: 20,
-          range: 4,
+          range: 5,
           legend: [2, 4, 6, 8],
           legendColors: ["#FFE6FF", "#FF0060"],
           onClick: function(date, count) {
-            //alert("Oh gosh, " + count + " things occured on " + date.toISOString());
-            //var path = "notebook/" + date.toISOString() + ".html";
-            //var path = "module1.html"
-            //$("#myid").load(path);
             var month = date.getMonth() + 1;
             var day = date.getDate();
             var pid = "date-" + month + "-" + day;
