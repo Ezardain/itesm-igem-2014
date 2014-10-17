@@ -4,14 +4,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Human practice</title>
+  <title>Collaboration</title>
   <link rel="shortcut icon" href="images/favicon.ico"/>
 
   <!-- Javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-  <script src="js/jquery-1.11.0.min.js"></script>
   <script src="js/lightbox.min.js"></script>
 
   <!--CSS Reset -->
@@ -39,24 +37,20 @@
       $("#wiki-footer").load("footer.html"); 
     });
   </script>
-  <script> 
-    $(function(){
-      $("#wiki-3k-cancer").load("3k-cancer.html"); 
-    });
-  </script>
-  <script> 
-    (function(){
-      $("#wiki-law-proposal").load("law-proposal.html"); 
-    });
-  </script>
-  <script> 
-    $(function(){
-      $("#wiki-kids-health").load("kids-health.html"); 
-    });
-  </script>
 </head>
 
 <div id="wiki-body">
+
+  <script> 
+    $(function(){
+      $("#wiki-UANL").load("UANL.html"); 
+    });
+  </script>
+  <script> 
+    $(function(){
+      $("#wiki-colombia").load("colombia.html"); 
+    });
+  </script>
 
 <body>
 
@@ -65,44 +59,35 @@
 
 <div id ="wiki-content" class="main-content">
 
-<div class="jumbotron" style="background-color:transparent; padding-top: 0; margin-bottom: 0; padding-bottom: 0; padding-left:0;">
+  <div class="jumbotron" style="background-color:transparent; padding-top: 0; margin-bottom: 0; padding-bottom: 0; padding-left:0;">
     <div class="container">
-      <div id="law-proposal-header">
-        <img class="col-md-8 col-md-offset-2" style="padding:40px 0px 0px 0px" src="http://2014.igem.org/wiki/images/9/9f/ITESM14_Cancer-mexico-header.png">
-        <h1 class="text-center col-md-8 col-md-offset-2" style="color: #f4ff3b; font-size: 7vw; font-weight: lighter;">Cancer in México</h1>
+      <div id="UANL-header">
+        <h1 class="text-center col-md-8 col-md-offset-2" style="color: #f4ff3b; font-size: 7vw; font-weight: lighter; padding-top:30px;">UANL</h1>
       </div>
-      <div id="kids-health-header">
-        <img class="col-md-8 col-md-offset-2 " style="padding:40px 0px 0px 0px" src="http://2014.igem.org/wiki/images/c/c2/ITESM14_Kids-health-header.png">
-        <h1 class="text-center col-md-8 col-md-offset-2" style="color: #f4ff3b; font-size: 7vw; font-weight: lighter;">Kids and Health</h1>
+      <div id="colombia-header">
+        <h1 class="text-center col-md-8 col-md-offset-2" style="color: #f4ff3b; font-size: 7vw; font-weight: lighter; padding-top:30px;">Colombia</h1>
       </div>
-      <div id="3k-cancer-header">
-        <img class="col-md-6 col-md-offset-3 " style="padding:40px 0px 0px 0px" src="http://2014.igem.org/wiki/images/5/55/ITESM14_3k-cancer-header.png">
-        <h1 class="text-center col-md-8 col-md-offset-2" style="color: #f4ff3b; font-size: 7vw; font-weight: lighter;">3K Against Cancer</h1>
-      </div>
+      <img class="col-md-8 col-md-offset-2 " src="images/module1/notebookheader.svg">
     </div>
   </div>
-
   <div class="well">
   <div class="container">
 
     <!--===============================Tab navigation======================================-->
     <ul class="nav nav-tabs nav-justified" role="tablist" id="myTab" style="font-family: 'Yanone Kaffeesatz';">
-      <li class="active"><a id="law-proposal-tab" href="#law-proposal" role="tab" data-toggle="tab">Law Proposal</a></li>
-      <li><a id="kids-health-tab" href="#kids-health" role="tab" data-toggle="tab">Kids and Health</a></li>
-      <li><a id="3k-cancer-tab" href="#3k-cancer" role="tab" data-toggle="tab">3K Against Cancer</a></li>
+      <li class="active"><a id="UANL-tab" href="#UANL" role="tab" data-toggle="tab">UANL</a></li>
+      <li><a id="colombia-tab" href="#colombia" role="tab" data-toggle="tab">Colombia</a></li>
     </ul>
     <!--===============================Tab content==================================================-->
     <div class="tab-content">
-      <div class="tab-pane active" id="law-proposal">
-        <div id="wiki-law-proposal"></div>
-      </div>
-      <div class="tab-pane" id="kids-health">
-        <div id="wiki-kids-health"></div>
-      </div>
-      <div class="tab-pane" id="3k-cancer">
-        <div id="wiki-3k-cancer"></div>
-      </div>
+      <div class="tab-pane" id="UANL">
+          <div id="wiki-UANL"></div>
+      </div><!--end UANL-->
+      <div class="tab-pane" id="colombia">
+          <div id="wiki-colombia"></div>
+      </div><!--end protocols-->   
     </div> <!-- tab-content -->
+
   </div><!-- container -->
   </div><!-- well -->
 
@@ -113,10 +98,6 @@
 </footer>
 
 <script src="js/ITESM14_main.js"></script>
-
-<script>
-  $( "#project" ).addClass("active");
-</script>
 
 </div>
 
