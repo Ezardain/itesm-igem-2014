@@ -90,72 +90,63 @@
           </table>
 		  </center>
 		<p>
-		<br></br>
+		<br/>
 		We start our analysis with the active LuxR. Notice that the amount of unbound LuxR in a given moment is given by R<sub>T</sub>-2R<sup>*</sup>. this is because each LuxR-AHL complex requires an homodimer to be generated. The reaction in which this complex is involved, can be written as:
-		</p>
-		<p><center><span id="eq1">...</span></center></p>
-			<script type="text/javascript">
-			katex.render("2A+2R \\leftarrow\\rightarrow R^*", eq1);
-			</script>
+		</p><br/>
+		<figure>
+			<a href="http://2014.igem.org/wiki/images/4/4f/ITESM14_Ecuacion1.png" data-lightbox="Equation 1" data-title=""><img class="img img-responsive" style="margin:0px auto;display:block width:20%;" src="http://2014.igem.org/wiki/images/4/4f/ITESM14_Ecuacion1.png"></a>
+		</figure><br/>
 		<p>
 		Using simple chemical kinetics and adding a degradation/dissolution term we get the following differential equation:
-		</p>
-		<p><center><span id="eq2">...</span></center></p>
-			<script type="text/javascript">
-			katex.render("\\frac{dR^*}{dt}=k_1\\left(A(t)\\right)^2\\left(R_T-2R^*(t)\\right)^2-k_2R^*(t)", eq2);
-			</script>
+		</p><br/>
+		<figure>
+			<a href="http://2014.igem.org/wiki/images/9/92/ITESM14_Ecuacion2.png" data-lightbox="Equation 2" data-title=""><img class="img img-responsive" style="margin:0px auto;display:block width:20%;" src="http://2014.igem.org/wiki/images/9/92/ITESM14_Ecuacion2.png"></a>
+		</figure><br/>
 		<p>
 		For the LuxI we use the Hill equation treated by Brian Ingalls (Ingalls, 2012), with a Hill coefficient equal 1, a basal expression level of a<sub>0</sub> and the respective degradation/dissolution term:
-		</p>
-		<p><center><span id="eq3">...</span></center></p>
-			<script type="text/javascript">
-			katex.render("\\frac{dI}{dt}= a_0+\\frac{aR^*(t)}{K_M+R^*(t)}-bI(t)", eq3);
-			</script>
+		</p><br/>
+		<figure>
+			<a href="http://2014.igem.org/wiki/images/e/ed/ITESM14_Ecuacion3.png" data-lightbox="Equation 3" data-title=""><img class="img img-responsive" style="margin:0px auto;display:block width:20%;" src="http://2014.igem.org/wiki/images/e/ed/ITESM14_Ecuacion3.png"></a>
+		</figure><br/>
 		<p>
-		The interactions for the AHL are more complicate than the others. It is involved in the active LuxR's reaction. It is related with the LuxI concentration, adding a linear term k<sub>0</sub>I(t) from the LuxI concentration. Moreover, we must consider that the degradation of a LuxR-AHL molecule implies the creation of 2 AHL molecules, adding a term 2k<sub>2</sub>R<sup>*</sup>(t).
-		</p>
+		The interactions for the AHL are more complicate than the others. It is involved in the active LuxR's reaction. It is related with the LuxI concentration, adding a linear term k<sub>0</sub>I(t) from the LuxI concentration. Moreover, we must consider that the degradation of a LuxR-AHL molecule implies the creation of 2 AHL molecules, adding a term 2k<sub>2</sub>R<sup>*</sup>(t).Finally, there's also an interchange in the membrane, between the AHL inside and outside the bacteria. How fast this interchange occurs depends strongly on the membrane structure and the concentrations inside and outside the cell, which tends to created an equilibrium. Together, these interactions give us the following differential equation for the AHL inside the cell:
+		</p><br/>
+		<figure>
+			<a href="http://2014.igem.org/wiki/images/c/cb/ITESM14_Ecuacion4.png" data-lightbox="Equation 4" data-title=""><img class="img img-responsive" style="margin:0px auto;display:block width:20%;" src="http://2014.igem.org/wiki/images/c/cb/ITESM14_Ecuacion4.png"></a>
+		</figure><br/>
 		<p>
-		Finally, there's also an interchange in the membrane, between the AHL inside and outside the bacteria. How fast this interchange occurs depends strongly on the membrane structure and the concentrations inside and outside the cell, which tends to created an equilibrium. Together, these interactions give us the following differential equation for the AHL inside the cell:
-		</p>
-		<p><center><span id="eq4">...</span></center></p>
-			<script type="text/javascript">
-			katex.render("\\frac{dA_{ext}}{dt}= pr\\left(A(t)-A_{ext}(t)\\right)-dA_{ext}(t)", eq4);
-			</script>
+		By the same principle we develop the differential equation for the AHL outside the cell, considering that we should multiply the membrane-interchange term by the size of the population, assuming that the autoinducer production by each cell is uniform for all the bacterias. We also add a diffusion term for the autoinducer that dissipates away from the population:
+		</p><br/>
+		<figure>
+			<a href=" http://2014.igem.org/wiki/images/e/ea/ITESM14_Ecuacion5.png" data-lightbox="Equation 5" data-title=""><img class="img img-responsive" style="margin:0px auto;display:block width:20%;" src=" http://2014.igem.org/wiki/images/e/ea/ITESM14_Ecuacion5.png"></a>
+		</figure><br/>
 		<p>
 		For the bacteriophage production, we will consider only the production of the slowest part of the operon corresponding to the phague's parts, this will be also described with another Hill equation. We must include a diffusion parameter that will describe the amount of bacteriophagues that cross the membrane to the outside and will take into account the time required to ensemble the bacteriophague after the production of its components.
-		</p>
-		<p><center><span id="eq5">...</span></center></p>
-			<script type="text/javascript">
-			katex.render("\\frac{dB_{in}}{dt}= \\frac{bR^*(t)}{K_M+R^*(t)}-sB_{in}(t)", eq5);
-			</script>
+		</p><br/>
+		<figure>
+			<a href=" http://2014.igem.org/wiki/images/6/68/ITESM14_Ecuacion6.png" data-lightbox="Equation 6" data-title=""><img class="img img-responsive" style="margin:0px auto;display:block width:20%;" src=" http://2014.igem.org/wiki/images/6/68/ITESM14_Ecuacion6.png"></a>
+		</figure><br/>
 		<p>
 		Finally we write an expression for the amount of phague outside the cells. Here we assume again an uniform production for all the bacterias and add also a diffusion term for the amount of phague that dissipates away from the population and a binding parameter r<sub>b</sub> for the amount of phague that binds to the cancer cells, this last parameter depends on the population of cancer cells:
-		</p>
-		<p><center><span id="eq6">...</span></center></p>
-			<script type="text/javascript">
-			katex.render("\\frac{dB_{ext}}{dt}= (sp-l-r_b)B_{ext}(t)", eq6);
-			</script>
+		</p><br/>
+		<figure>
+			<a href=" http://2014.igem.org/wiki/images/e/e0/ITESM14_Ecuacion7.png" data-lightbox="Equation 7" data-title=""><img class="img img-responsive" style="margin:0px auto;display:block width:20%;" src=" http://2014.igem.org/wiki/images/e/e0/ITESM14_Ecuacion7.png"></a>
+		</figure><br/>
 		<p>
 		Here r<sub>b</sub>B<sub>ext</sub>(t)  is the binding rate of the bacteriophage. If we want to predict the amount of cancer cells that are bound to a bacteriophague, the treated cells, we have to consider an stochastic model, taking into account that the amount of phagues bound to the cell will follows a binomial distribution (Smith H. and Trevino R., 2009):		
-		</p>
-		<p><center><span id="eq7">...</span></center></p>
-			<script type="text/javascript">
-			katex.render("p_i=\\binom{N}{i}p^i(1-p)^{N-i}", eq7);
-			</script>
+		</p><br/>
+		<figure>
+			<a href=" http://2014.igem.org/wiki/images/1/12/ITESM14_Ecuacion8.png" data-lightbox="Equation 8" data-title=""><img class="img img-responsive" style="margin:0px auto;display:block width:20%;" src=" http://2014.igem.org/wiki/images/1/12/ITESM14_Ecuacion8.png"></a>
+		</figure><br/>
 		<p>
-		Where p<sub>i</sub> is the probability for having <em>i</em> phagues bound to a given cell, <em>p</em> is the probability for a binding site to be occupied and <em>N</em> is the number of binding sites in the cell. From this we can have an expected value of <em>Np</em> and a standard deviation of √<em>Np(1-p)</em>. More over we can estimate a maximum E<sub>max</sub> and a minimum E<sub>min</sub> for the number of phages bound per cancer cell.
-		</p>
-		<p>
-		Taking this consideration together with the previous differential equations, we can write an expression for rate of the minimum and maximum possible values of treated cell.
-		</p>
-		<p><center><span id="eq8">...</span></center></p>
-			<script type="text/javascript">
-			katex.render("\\frac{dCells_{treated_{min}}}{dt}= \\frac{r_bB_{ext}(t)}{E_{max}}", eq8);
-			</script>
-		<p><center><span  id="eq9">...</span></center></p>
-			<script type="text/javascript">
-			katex.render("\\frac{dCells_{treated_{max}}}{dt}= \\frac{r_bB_{ext}(t)}{E_{min}}", eq9);
-			</script>
+		Where p<sub>i</sub> is the probability for having <em>i</em> phagues bound to a given cell, <em>p</em> is the probability for a binding site to be occupied and <em>N</em> is the number of binding sites in the cell. From this we can have an expected value of <em>Np</em> and a standard deviation of √<em>Np(1-p)</em>. More over we can estimate a maximum E<sub>max</sub> and a minimum E<sub>min</sub> for the number of phages bound per cancer cell. Taking this consideration together with the previous differential equations, we can write an expression for rate of the minimum and maximum possible values of treated cell.
+		</p><br/>
+		<figure>
+			<a href=" http://2014.igem.org/wiki/images/6/6e/ITESM14_Ecuacion9.png" data-lightbox="Equation 9" data-title=""><img class="img img-responsive" style="margin:0px auto;display:block width:20%;" src=" http://2014.igem.org/wiki/images/6/6e/ITESM14_Ecuacion9.png"></a>
+		</figure><br/>
+		<figure>
+			<a href=" http://2014.igem.org/wiki/images/4/4f/ITESM14_Ecuacion10.png" data-lightbox="Equation 10" data-title=""><img class="img img-responsive" style="margin:0px auto;display:block width:20%;" src=" http://2014.igem.org/wiki/images/4/4f/ITESM14_Ecuacion10.png"></a>
+		</figure>
 		
     <hr>
 	</section>
