@@ -10,6 +10,10 @@ a {
 a:hover{
  text-decoration: none;
 }
+tbody tr:nth-child(odd)
+{background-color:rgba(255, 0, 96, 0.5);
+}
+
 
 /*Accordion*/
 .panel .panel-heading{
