@@ -30,19 +30,6 @@ $(document).on('click', '#show-menu', function(e) {
      }
 });
 
-  $("p").hover(function(){
-    $("p").css("background-color","yellow");
-    },function(){
-    $("p").css("background-color","pink");
-  });
-
-$(document).ready(function(){
-  $(".bussinesscard").hover(function() {
-       $( "#description_team" ).removeClass("description_team_members_invisible");
-       $( "#description_team" ).addClass("description_team_members_visible");
-   )}
-});
-
 $(document).ready(function(){
   $("a[href='#overview']").on('shown.bs.tab', function(){
     $("#overviewheader").show();
